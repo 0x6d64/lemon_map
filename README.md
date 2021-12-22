@@ -1,2 +1,5 @@
 # lemon_map
-a scraper for Lime scooter data
+A scraper for Lime scooter data.
+
+Resources:
+https://github.com/ubahnverleih/WoBike/blob/master/Lime.md
