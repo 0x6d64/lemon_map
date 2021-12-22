@@ -1,0 +1,35 @@
+# curl --request POST
+#  --url 'https://web-production.lime.bike/api/rider/v1/login'
+#  --header 'Content-Type: application/json'
+#  --data '{"login_code": "123456", "phone": "+33612345678"}'
+POST https://web-production.lime.bike/api/rider/v1/login
+Content-Type: application/json
+
+{"login_code": {{lime_otp}}, "phone": {{phone_number_with_plus}} }
+
+<> 2021-12-22T222623.200.json
+
+###
+
+# curl --location --request POST 'https://web-production.lime.bike/api/rider/v1/login'
+#--header 'Content-Type: application/x-www-form-urlencoded'
+#--data 'email=<YOUR-EMAIL>&name=Lime%20Rider&password=<YOUR-PASSWORD>&platform=iOS'
+POST https://web-production.lime.bike/api/rider/v1/login
+Content-Type: application/x-www-form-urlencoded
+
+email={{email}}&name={{lime_name}}&password={{lime_pass}}&platform=iOS
+
+<> 2021-12-22T222008.401.txt
+<> 2021-12-22T221950.401.txt
+<> 2021-12-22T221350.401.txt
+
+###
+
+# curl --request GET
+#  --url 'https://web-production.lime.bike/api/rider/v1/login?phone=%2B33612345678'
+GET https://web-production.lime.bike/api/rider/v1/login?phone={{phone_no}}
+
+<> 2021-12-22T222508.200.json
+<> 2021-12-22T222244.401.txt
+
+###
