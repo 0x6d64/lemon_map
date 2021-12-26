@@ -5,7 +5,13 @@
 POST https://web-production.lime.bike/api/rider/v1/login
 Content-Type: application/json
 
-{"login_code": {{lime_otp}}, "phone": {{phone_number_with_plus}} }
+{
+  "login_code": "{{lime_otp}}", "phone": "{{phone_no}}"
+}
+
+> {%
+    client.global.set("my_cookie", response.body.json.token); // untested handler...
+%}
 
 <> 2021-12-22T222623.200.json
 
@@ -27,7 +33,7 @@ email={{email}}&name={{lime_name}}&password={{lime_pass}}&platform=iOS
 
 # curl --request GET
 #  --url 'https://web-production.lime.bike/api/rider/v1/login?phone=%2B33612345678'
-GET https://web-production.lime.bike/api/rider/v1/login?phone={{phone_no}}
+GET https://web-production.lime.bike/api/rider/v1/login?phone={{phone_no_quoted}}
 
 <> 2021-12-22T222508.200.json
 <> 2021-12-22T222244.401.txt
