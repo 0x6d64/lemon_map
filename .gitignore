@@ -1,6 +1,9 @@
 .idea/
 /http-client.private.env.json
 
+# for now don't track local config in repo
+*.ini
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

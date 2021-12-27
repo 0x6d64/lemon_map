@@ -1,0 +1,13 @@
+@startmindmap
+* lemon_map
+** <no command given>
+*** if no auth data present: start auth dialog
+*** else: ???
+** --auth: starts dialog to get auth data
+** --cyclic: do ??? cyclic
+
+legend
+Sketch of the command parser
+end legend
+
+@endmindmap

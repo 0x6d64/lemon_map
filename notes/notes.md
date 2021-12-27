@@ -7,10 +7,9 @@
   * center: 45.79919616985226, 24.155758121471834
   * bbox: westlimit=24.153627457; southlimit=45.7969706826; eastlimit=24.157554211; northlimit=45.8010909742
 
-
 ### Images:
 bbox-01:
-![bbox-01](notes-data/bbox-01.png)
+![bbox-01](bbox-01.png)
 
 bbox-02:
-![bbox-02](notes-data/bbox-02.png)
+![bbox-02](bbox-02.png)
