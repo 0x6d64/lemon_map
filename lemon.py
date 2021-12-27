@@ -19,7 +19,7 @@ def get_parser():
 def setup_auth():
     print("let's get an auth token by requesting an OTP on your mobile phone...")
     auth_file_destination = input(
-        "save auth data to file: [{}] ".format(config.get("DEFAULT", "auth_file"))
+        "where should the auth file saved? [{}] ".format(config.get("DEFAULT", "auth_file"))
     )
     phone_no = input("please enter your phone number in the format +xxxxx: ")
     auth = lemon_map.LemonAuth()
