@@ -1,0 +1,4322 @@
+{
+  "data": {
+    "id": "views::mapview",
+    "type": "map_view",
+    "attributes": {
+      "title": "",
+      "user": {
+        "id": "ABCDEFGHIJKLM",
+        "type": "users",
+        "attributes": {
+          "token": "ABCDEFGHIJKLM",
+          "phone_number": "4915112345678",
+          "email_address": "0x6d64@martin-demling.de",
+          "has_verified_email_address": true,
+          "name": null,
+          "given_name": null,
+          "surname": null,
+          "default_payment_method": {
+            "id": "4EEIKOTLLK77B",
+            "type": "payment_methods",
+            "attributes": {
+              "payment_method_type": "card",
+              "last4": "6841",
+              "exp_month": "4",
+              "exp_year": "2026",
+              "default": true,
+              "brand": "Visa",
+              "status": "active",
+              "tokenization_method": null,
+              "email_address": null,
+              "show_details": false
+            }
+          },
+          "referral_code": "R4NLL2N",
+          "num_trips": 0,
+          "edu": false,
+          "subscription_item_states": [],
+          "promotion_notification": false,
+          "donation_profile": {
+            "id": "EXW5S3HUMPAEM",
+            "type": "donation_profiles",
+            "attributes": {
+              "donation_type": "none",
+              "donation_organizations": [],
+              "total_donation_amount": {
+                "currency_code": "USD",
+                "amount": 0.0,
+                "amount_str": "0.0",
+                "currency_symbol": "$",
+                "display_string": "$0"
+              },
+              "total_donation_amount_cents": null,
+              "currency": null
+            }
+          },
+          "juicer_profile_status": null,
+          "juicer_profile_initial_activated_at": null,
+          "accepted_user_agreement_version": 4,
+          "accepted_compliance_version": null,
+          "balance": {
+            "currency_code": "RON",
+            "amount": 0.0,
+            "amount_str": "0.0",
+            "currency_symbol": "Lei",
+            "display_string": "0 Lei"
+          },
+          "pending_balance": {
+            "currency_code": "RON",
+            "amount": 0.0,
+            "amount_str": "0.0",
+            "currency_symbol": "Lei",
+            "display_string": "0 Lei"
+          },
+          "new_juicer_earnings_amount": {
+            "currency_code": "USD",
+            "amount": 150.0,
+            "amount_str": "150.0",
+            "currency_symbol": "$",
+            "display_string": "$150"
+          },
+          "new_juicer_earnings_promo_amount": "150",
+          "new_juicer_earnings_promo_amount_cents": 15000,
+          "new_juicer_earnings_promo_amount_cent": 15000,
+          "new_juicer_earnings_promo_currency": "RON",
+          "juicer_referral_type": null,
+          "juicer_referral_code": null,
+          "juicer_referral_amount": null,
+          "juicer_referral_amount_cents": null,
+          "juicer_referral_currency": null,
+          "balance_cents": 0,
+          "pending_balance_cents": 0,
+          "currency": "RON",
+          "show_group_ride": true,
+          "id_verification_pending": false
+        }
+      },
+      "regions": null,
+      "zones": [
+        {
+          "id": "VDDEF2EMAFUBK",
+          "type": "zones",
+          "attributes": {
+            "name": "[Sibiu][SZ][new service zone 2021]",
+            "polyline": "owpvGkomrC{@ri@|Hp]lJ~MbN~E~Us@`KoUfJeIjPfF|YbH~DoMfi@hCi@ej@]si@}Xco@fRsPeC}Gm_@x_@}`@a|@{I|Nv\\zgAsOd`@uQhl@al@cnAm_@n`@",
+            "category": "service_zone",
+            "icon_latitude": "45.77456",
+            "icon_longitude": "24.14805",
+            "zone_styling_id": "116",
+            "show_icon": false,
+            "associated_vehicle_types": [
+              "scooter"
+            ],
+            "provider": "Lime",
+            "status": "active",
+            "allow_tap_while_filtered": false,
+            "show_zone_icon": true
+          }
+        },
+        {
+          "id": "XF2P3X7YGN4W5",
+          "type": "zones",
+          "attributes": {
+            "name": "[Sibiu][LSZ][SDZ 3]",
+            "polyline": "ewovGo~lrCf@{@i@E_ADsAVe@JEy@PMMo@OP@rADb@nB_@lAAFf@",
+            "category": "low_speed_zone",
+            "icon_latitude": "45.79695",
+            "icon_longitude": "24.15638",
+            "zone_styling_id": "46",
+            "show_icon": false,
+            "associated_vehicle_types": [
+              "scooter"
+            ],
+            "provider": "Lime",
+            "status": "active",
+            "allow_tap_while_filtered": true,
+            "show_zone_icon": true
+          }
+        },
+        {
+          "id": "NY6B7AQUWR2CP",
+          "type": "zones",
+          "attributes": {
+            "name": "[Sibiu][NPZ][Exterior]",
+            "polyline": "ekvvGyijrCxw@zwFvvGxtAdvCuyDsWq_SqoBeQsIlzHjCdHgRrPzXdo@\\ri@h@dj@gi@iC_EnMik@kOgJdIaKpU_Vr@iOgFgIwM{Hq]x@ui@n_@o`@`l@bnAtQkl@rOe`@w\\{gAzI}N|`@`|@d_@c`@tIkzHo`Ee_@qeCvpBkj@v~H|SllB",
+            "category": "no_parking_zone",
+            "icon_latitude": "45.793725",
+            "icon_longitude": "24.15919",
+            "zone_styling_id": "1",
+            "show_icon": false,
+            "associated_vehicle_types": [
+              "scooter"
+            ],
+            "provider": "Lime",
+            "status": "active",
+            "allow_tap_while_filtered": true,
+            "show_zone_icon": true
+          }
+        }
+      ],
+      "zone_stylings": [
+        {
+          "id": "1",
+          "type": "zone_stylings",
+          "attributes": {
+            "zone_category": "no_parking_no_locking_zone",
+            "speed_limit": null,
+            "speed_limit_unit": null,
+            "fill_color": "#33EF0901",
+            "border_color": "#EF0901",
+            "icon_image_url": "https://assets.lime.bike/icons/zone_pins/pin_noparking_inactive@3x.png",
+            "banner_icon_image_url": "https://assets.lime.bike/icons/zones/banners/no-parking-pin_banner.png",
+            "banner_text": "Leave this zone to end or pause your ride.",
+            "banner_color": "#dc4d3a",
+            "tooltip_title": "No Locking Zone",
+            "tooltip_body": "Ending or pausing your ride is not possible here.",
+            "border_color_selected": "#EF0901",
+            "icon_image_url_selected": "https://assets.lime.bike/icons/zone_pins/pin_noparking_active@3x.png",
+            "border_color_unselected": "#F99D99",
+            "min_zoom": 11,
+            "max_zoom": null,
+            "click_fill_color": "#33EF0901",
+            "click_min_zoom": 11,
+            "click_max_zoom": null,
+            "android_tool_tip_body": "Ending or pausing your ride is not possible here.",
+            "android_banner_text": "Leave this zone to end or pause your ride.",
+            "show_zone_icon": true
+          }
+        },
+        {
+          "id": "46",
+          "type": "zone_stylings",
+          "attributes": {
+            "zone_category": "low_speed_zone",
+            "speed_limit": 13,
+            "speed_limit_unit": "km/h",
+            "fill_color": "#33F4E429",
+            "border_color": "#F4E429",
+            "icon_image_url": "https://assets.lime.bike/icons/zone_pins/pin_slowzone_inactive@3x.png",
+            "banner_icon_image_url": "https://assets.lime.bike/icons/zones/banners/13-low-speed-pin_banner.png",
+            "banner_text": "Top speed is restricted to 13 km/h in this zone.",
+            "banner_color": "#dc4d3a",
+            "tooltip_title": "Low Speed Zone",
+            "tooltip_body": "Top speed is restricted to 13 km/h here.",
+            "border_color_selected": "#F4E429",
+            "icon_image_url_selected": "https://assets.lime.bike/icons/zone_pins/pin_slowzone_active@3x.png",
+            "border_color_unselected": "#F8EF7F",
+            "min_zoom": 11,
+            "max_zoom": null,
+            "click_fill_color": "#33F4E429",
+            "click_min_zoom": 11,
+            "click_max_zoom": null,
+            "android_tool_tip_body": "Top speed is restricted to %{speed_limit} %{speed_limit_unit} here.",
+            "android_banner_text": "Top speed is restricted to %{speed_limit} %{speed_limit_unit} in this zone.",
+            "show_zone_icon": true
+          }
+        },
+        {
+          "id": "116",
+          "type": "zone_stylings",
+          "attributes": {
+            "zone_category": "service_zone",
+            "speed_limit": null,
+            "speed_limit_unit": null,
+            "fill_color": "#0023D000",
+            "border_color": "#23D000",
+            "icon_image_url": null,
+            "banner_icon_image_url": null,
+            "banner_text": null,
+            "banner_color": null,
+            "tooltip_title": null,
+            "tooltip_body": null,
+            "border_color_selected": "#66EB66",
+            "icon_image_url_selected": null,
+            "border_color_unselected": "#66EB66",
+            "min_zoom": 11,
+            "max_zoom": 14,
+            "click_fill_color": "#0023D000",
+            "click_min_zoom": 0,
+            "click_max_zoom": 0,
+            "android_tool_tip_body": null,
+            "android_banner_text": null,
+            "show_zone_icon": true
+          }
+        }
+      ],
+      "bike_clusters": null,
+      "bikes": [
+        {
+          "id": "ET-XCVZR67CLVSKQLS4ESIBKDDF357SGONV5V6JY3Q",
+          "type": "bikes",
+          "attributes": {
+            "status": "locked",
+            "plate_number": "XXX-NFT",
+            "latitude": 45.799091,
+            "longitude": 24.154072,
+            "battery_percentage": 38,
+            "swappable_battery": false,
+            "last_activity_at": "2021-12-27T18:40:24.000Z",
+            "type_name": "scooter",
+            "battery_level": "medium",
+            "meter_range": 3485,
+            "rate_plan": "FREE to unlock +\n0.50 Lei / 1 min",
+            "bike_icon_id": 49,
+            "last_three": "NFT",
+            "license_plate_number": null,
+            "brand": "lime",
+            "generation": "2.0",
+            "operating_status": "in_service",
+            "provider": "Lime"
+          }
+        },
+        {
+          "id": "ET-JQWMZN647ZMGXJJFNNES3RXVPTIBB3VOQYYMN6Q",
+          "type": "bikes",
+          "attributes": {
+            "status": "locked",
+            "plate_number": "XXX-ZYB",
+            "latitude": 45.799205,
+            "longitude": 24.158408,
+            "battery_percentage": 43,
+            "swappable_battery": false,
+            "last_activity_at": "2021-12-27T18:28:42.000Z",
+            "type_name": "scooter",
+            "battery_level": "medium",
+            "meter_range": 4463,
+            "rate_plan": "FREE to unlock +\n0.50 Lei / 1 min",
+            "bike_icon_id": 49,
+            "last_three": "ZYB",
+            "license_plate_number": null,
+            "brand": "lime",
+            "generation": "2.0",
+            "operating_status": "in_service",
+            "provider": "Lime"
+          }
+        },
+        {
+          "id": "ET-5GF3OI5G2VIHR7KLO2MSE7VPXIHWF2ATBN5GTSI",
+          "type": "bikes",
+          "attributes": {
+            "status": "locked",
+            "plate_number": "XXX-HZU",
+            "latitude": 45.796932,
+            "longitude": 24.153855,
+            "battery_percentage": 27,
+            "swappable_battery": false,
+            "last_activity_at": "2021-12-27T18:10:42.000Z",
+            "type_name": "scooter",
+            "battery_level": "low",
+            "meter_range": 1759,
+            "rate_plan": "FREE to unlock +\n0.50 Lei / 1 min",
+            "bike_icon_id": 48,
+            "last_three": "HZU",
+            "license_plate_number": null,
+            "brand": "lime",
+            "generation": "2.0",
+            "operating_status": "in_service",
+            "provider": "Lime"
+          }
+        },
+        {
+          "id": "ET-5YSXUZ6N2YXCWROVRGYZXRDU4HPW5QO7NFIGMPQ",
+          "type": "bikes",
+          "attributes": {
+            "status": "locked",
+            "plate_number": "XXX-ZDF",
+            "latitude": 45.800325,
+            "longitude": 24.158617,
+            "battery_percentage": 32,
+            "swappable_battery": false,
+            "last_activity_at": "2021-12-27T18:24:19.000Z",
+            "type_name": "scooter",
+            "battery_level": "medium",
+            "meter_range": 2471,
+            "rate_plan": "FREE to unlock +\n0.50 Lei / 1 min",
+            "bike_icon_id": 49,
+            "last_three": "ZDF",
+            "license_plate_number": null,
+            "brand": "lime",
+            "generation": "2.0",
+            "operating_status": "in_service",
+            "provider": "Lime"
+          }
+        },
+        {
+          "id": "ET-CBNOC54MRJ7VIUW3TLCSH5PHKHP4KY6XTHO4QNQ",
+          "type": "bikes",
+          "attributes": {
+            "status": "locked",
+            "plate_number": "XXX-RPG",
+            "latitude": 45.799777,
+            "longitude": 24.15218,
+            "battery_percentage": 28,
+            "swappable_battery": false,
+            "last_activity_at": "2021-12-27T18:15:39.000Z",
+            "type_name": "scooter",
+            "battery_level": "low",
+            "meter_range": 1892,
+            "rate_plan": "FREE to unlock +\n0.50 Lei / 1 min",
+            "bike_icon_id": 48,
+            "last_three": "RPG",
+            "license_plate_number": null,
+            "brand": "lime",
+            "generation": "2.0",
+            "operating_status": "in_service",
+            "provider": "Lime"
+          }
+        },
+        {
+          "id": "ET-AECVPIA6DJAM5TEWAGSSY5HCFZT2ORGXIXG5S3Y",
+          "type": "bikes",
+          "attributes": {
+            "status": "locked",
+            "plate_number": "XXX-UBQ",
+            "latitude": 45.800821,
+            "longitude": 24.158534,
+            "battery_percentage": 31,
+            "swappable_battery": false,
+            "last_activity_at": "2021-12-27T18:36:46.000Z",
+            "type_name": "scooter",
+            "battery_level": "medium",
+            "meter_range": 2319,
+            "rate_plan": "FREE to unlock +\n0.50 Lei / 1 min",
+            "bike_icon_id": 49,
+            "last_three": "UBQ",
+            "license_plate_number": null,
+            "brand": "lime",
+            "generation": "2.0",
+            "operating_status": "in_service",
+            "provider": "Lime"
+          }
+        },
+        {
+          "id": "ET-5PAJWXLCBSVAEUD6BIAQILKY2VNWQ2BGXNR4XEY",
+          "type": "bikes",
+          "attributes": {
+            "status": "locked",
+            "plate_number": "XXX-JGF",
+            "latitude": 45.799703,
+            "longitude": 24.15124,
+            "battery_percentage": 76,
+            "swappable_battery": false,
+            "last_activity_at": "2021-12-27T18:00:30.000Z",
+            "type_name": "scooter",
+            "battery_level": "high",
+            "meter_range": 13943,
+            "rate_plan": "FREE to unlock +\n0.50 Lei / 1 min",
+            "bike_icon_id": 50,
+            "last_three": "JGF",
+            "license_plate_number": null,
+            "brand": "lime",
+            "generation": "2.0",
+            "operating_status": "in_service",
+            "provider": "Lime"
+          }
+        },
+        {
+          "id": "ET-D6ZACJ4LQ5FEDMD6S75AW6TALYTK7TCOJ3PAG5I",
+          "type": "bikes",
+          "attributes": {
+            "status": "locked",
+            "plate_number": "XXX-JUZ",
+            "latitude": 45.798488,
+            "longitude": 24.16019,
+            "battery_percentage": 55,
+            "swappable_battery": false,
+            "last_activity_at": "2021-12-27T18:35:41.000Z",
+            "type_name": "scooter",
+            "battery_level": "high",
+            "meter_range": 7302,
+            "rate_plan": "FREE to unlock +\n0.50 Lei / 1 min",
+            "bike_icon_id": 50,
+            "last_three": "JUZ",
+            "license_plate_number": null,
+            "brand": "lime",
+            "generation": "2.0",
+            "operating_status": "in_service",
+            "provider": "Lime"
+          }
+        },
+        {
+          "id": "ET-O7TBGNQTZIDUYGFAEXXS7TSYWIZSF2QEYIGQYWQ",
+          "type": "bikes",
+          "attributes": {
+            "status": "locked",
+            "plate_number": "XXX-ULX",
+            "latitude": 45.796424,
+            "longitude": 24.152553,
+            "battery_percentage": 21,
+            "swappable_battery": false,
+            "last_activity_at": "2021-12-27T18:38:05.000Z",
+            "type_name": "scooter",
+            "battery_level": "low",
+            "meter_range": 1064,
+            "rate_plan": "FREE to unlock +\n0.50 Lei / 1 min",
+            "bike_icon_id": 48,
+            "last_three": "ULX",
+            "license_plate_number": null,
+            "brand": "lime",
+            "generation": "2.0",
+            "operating_status": "in_service",
+            "provider": "Lime"
+          }
+        },
+        {
+          "id": "ET-X7QQMTGZYDNSW3LIJ7QZZ3BLXI6W6V2XLYLI5SQ",
+          "type": "bikes",
+          "attributes": {
+            "status": "locked",
+            "plate_number": "XXX-UAD",
+            "latitude": 45.800359,
+            "longitude": 24.160583,
+            "battery_percentage": 21,
+            "swappable_battery": false,
+            "last_activity_at": "2021-12-27T18:09:40.000Z",
+            "type_name": "scooter",
+            "battery_level": "low",
+            "meter_range": 1064,
+            "rate_plan": "FREE to unlock +\n0.50 Lei / 1 min",
+            "bike_icon_id": 48,
+            "last_three": "UAD",
+            "license_plate_number": null,
+            "brand": "lime",
+            "generation": "2.0",
+            "operating_status": "in_service",
+            "provider": "Lime"
+          }
+        },
+        {
+          "id": "ET-ZI6LMG2MVGP5H72HL3CCXZ35OXYBHYTQK7YBD5I",
+          "type": "bikes",
+          "attributes": {
+            "status": "locked",
+            "plate_number": "XXX-TSR",
+            "latitude": 45.800349,
+            "longitude": 24.160632,
+            "battery_percentage": 37,
+            "swappable_battery": false,
+            "last_activity_at": "2021-12-27T18:15:59.000Z",
+            "type_name": "scooter",
+            "battery_level": "medium",
+            "meter_range": 3304,
+            "rate_plan": "FREE to unlock +\n0.50 Lei / 1 min",
+            "bike_icon_id": 49,
+            "last_three": "TSR",
+            "license_plate_number": null,
+            "brand": "lime",
+            "generation": "2.0",
+            "operating_status": "in_service",
+            "provider": "Lime"
+          }
+        },
+        {
+          "id": "ET-ON7BMHZKJFL2T5DL7ZKDMRHM2CHLJ4WTM5UKYBI",
+          "type": "bikes",
+          "attributes": {
+            "status": "locked",
+            "plate_number": "XXX-SXX",
+            "latitude": 45.800369,
+            "longitude": 24.160626,
+            "battery_percentage": 24,
+            "swappable_battery": false,
+            "last_activity_at": "2021-12-27T18:21:13.000Z",
+            "type_name": "scooter",
+            "battery_level": "low",
+            "meter_range": 1390,
+            "rate_plan": "FREE to unlock +\n0.50 Lei / 1 min",
+            "bike_icon_id": 48,
+            "last_three": "SXX",
+            "license_plate_number": null,
+            "brand": "lime",
+            "generation": "2.0",
+            "operating_status": "in_service",
+            "provider": "Lime"
+          }
+        },
+        {
+          "id": "ET-FO6U7OFBKCV7YPMBIUPOHYLYGHXWT2X5ZOAQK3Y",
+          "type": "bikes",
+          "attributes": {
+            "status": "locked",
+            "plate_number": "XXX-RFP",
+            "latitude": 45.799992,
+            "longitude": 24.160815,
+            "battery_percentage": 78,
+            "swappable_battery": false,
+            "last_activity_at": "2021-12-27T18:03:49.000Z",
+            "type_name": "scooter",
+            "battery_level": "high",
+            "meter_range": 14686,
+            "rate_plan": "FREE to unlock +\n0.50 Lei / 1 min",
+            "bike_icon_id": 50,
+            "last_three": "RFP",
+            "license_plate_number": null,
+            "brand": "lime",
+            "generation": "2.0",
+            "operating_status": "in_service",
+            "provider": "Lime"
+          }
+        },
+        {
+          "id": "ET-IGOLZCVXAZV3IGQOFZPDALOYRJV7OPRH4CVRPEI",
+          "type": "bikes",
+          "attributes": {
+            "status": "locked",
+            "plate_number": "XXX-FUF",
+            "latitude": 45.800408,
+            "longitude": 24.160631,
+            "battery_percentage": 50,
+            "swappable_battery": false,
+            "last_activity_at": "2021-12-27T18:12:18.000Z",
+            "type_name": "scooter",
+            "battery_level": "high",
+            "meter_range": 6035,
+            "rate_plan": "FREE to unlock +\n0.50 Lei / 1 min",
+            "bike_icon_id": 50,
+            "last_three": "FUF",
+            "license_plate_number": null,
+            "brand": "lime",
+            "generation": "2.0",
+            "operating_status": "in_service",
+            "provider": "Lime"
+          }
+        },
+        {
+          "id": "ET-HSAS6PQSA7QF4BUX522MCB3QX37DWGMNOKSCIQI",
+          "type": "bikes",
+          "attributes": {
+            "status": "locked",
+            "plate_number": "XXX-MVL",
+            "latitude": 45.79979,
+            "longitude": 24.161159,
+            "battery_percentage": 39,
+            "swappable_battery": false,
+            "last_activity_at": "2021-12-27T18:39:04.000Z",
+            "type_name": "scooter",
+            "battery_level": "medium",
+            "meter_range": 3671,
+            "rate_plan": "FREE to unlock +\n0.50 Lei / 1 min",
+            "bike_icon_id": 49,
+            "last_three": "MVL",
+            "license_plate_number": null,
+            "brand": "lime",
+            "generation": "2.0",
+            "operating_status": "in_service",
+            "provider": "Lime"
+          }
+        },
+        {
+          "id": "ET-BPTAPIFYUHAFD7NFJGAXGW7MNZWOSEUJFYOENII",
+          "type": "bikes",
+          "attributes": {
+            "status": "locked",
+            "plate_number": "XXX-SZU",
+            "latitude": 45.798903,
+            "longitude": 24.149531,
+            "battery_percentage": 39,
+            "swappable_battery": false,
+            "last_activity_at": "2021-12-27T18:26:12.000Z",
+            "type_name": "scooter",
+            "battery_level": "medium",
+            "meter_range": 3671,
+            "rate_plan": "FREE to unlock +\n0.50 Lei / 1 min",
+            "bike_icon_id": 49,
+            "last_three": "SZU",
+            "license_plate_number": null,
+            "brand": "lime",
+            "generation": "2.0",
+            "operating_status": "in_service",
+            "provider": "Lime"
+          }
+        },
+        {
+          "id": "ET-F47BQCDT6XVPLTGAZXGAK5JLUGIZE7G6GEFEXII",
+          "type": "bikes",
+          "attributes": {
+            "status": "locked",
+            "plate_number": "XXX-PFU",
+            "latitude": 45.79741,
+            "longitude": 24.161492,
+            "battery_percentage": 29,
+            "swappable_battery": false,
+            "last_activity_at": "2021-12-27T18:32:23.000Z",
+            "type_name": "scooter",
+            "battery_level": "low",
+            "meter_range": 2030,
+            "rate_plan": "FREE to unlock +\n0.50 Lei / 1 min",
+            "bike_icon_id": 48,
+            "last_three": "PFU",
+            "license_plate_number": null,
+            "brand": "lime",
+            "generation": "2.0",
+            "operating_status": "in_service",
+            "provider": "Lime"
+          }
+        },
+        {
+          "id": "ET-AJ3SKG6NID4MPO3YDNY462PADZLHSBPGBXDU27I",
+          "type": "bikes",
+          "attributes": {
+            "status": "locked",
+            "plate_number": "XXX-LSY",
+            "latitude": 45.797343,
+            "longitude": 24.161549,
+            "battery_percentage": 26,
+            "swappable_battery": false,
+            "last_activity_at": "2021-12-27T18:41:14.000Z",
+            "type_name": "scooter",
+            "battery_level": "low",
+            "meter_range": 1631,
+            "rate_plan": "FREE to unlock +\n0.50 Lei / 1 min",
+            "bike_icon_id": 48,
+            "last_three": "LSY",
+            "license_plate_number": null,
+            "brand": "lime",
+            "generation": "2.0",
+            "operating_status": "in_service",
+            "provider": "Lime"
+          }
+        },
+        {
+          "id": "ET-3OQVL4HJDPLSUUNBVCQ6SGNRRHDZN7IUU42TXKI",
+          "type": "bikes",
+          "attributes": {
+            "status": "locked",
+            "plate_number": "XXX-RLE",
+            "latitude": 45.795066,
+            "longitude": 24.152562,
+            "battery_percentage": 29,
+            "swappable_battery": false,
+            "last_activity_at": "2021-12-27T18:27:46.000Z",
+            "type_name": "scooter",
+            "battery_level": "low",
+            "meter_range": 2030,
+            "rate_plan": "FREE to unlock +\n0.50 Lei / 1 min",
+            "bike_icon_id": 48,
+            "last_three": "RLE",
+            "license_plate_number": null,
+            "brand": "lime",
+            "generation": "2.0",
+            "operating_status": "in_service",
+            "provider": "Lime"
+          }
+        },
+        {
+          "id": "ET-P5E4NFF74CE5VXG2UUS2M54NB2YP45YGA5QG6WI",
+          "type": "bikes",
+          "attributes": {
+            "status": "locked",
+            "plate_number": "XXX-SZX",
+            "latitude": 45.801861,
+            "longitude": 24.150294,
+            "battery_percentage": 31,
+            "swappable_battery": false,
+            "last_activity_at": "2021-12-27T18:01:05.000Z",
+            "type_name": "scooter",
+            "battery_level": "medium",
+            "meter_range": 2319,
+            "rate_plan": "FREE to unlock +\n0.50 Lei / 1 min",
+            "bike_icon_id": 49,
+            "last_three": "SZX",
+            "license_plate_number": null,
+            "brand": "lime",
+            "generation": "2.0",
+            "operating_status": "in_service",
+            "provider": "Lime"
+          }
+        },
+        {
+          "id": "ET-PIUGXGV6QPKOH2SOMXAQAHI3V7XBR5KB2QIF3ZI",
+          "type": "bikes",
+          "attributes": {
+            "status": "locked",
+            "plate_number": "XXX-VKH",
+            "latitude": 45.797956,
+            "longitude": 24.162593,
+            "battery_percentage": 42,
+            "swappable_battery": false,
+            "last_activity_at": "2021-12-27T18:11:07.000Z",
+            "type_name": "scooter",
+            "battery_level": "medium",
+            "meter_range": 4258,
+            "rate_plan": "FREE to unlock +\n0.50 Lei / 1 min",
+            "bike_icon_id": 49,
+            "last_three": "VKH",
+            "license_plate_number": null,
+            "brand": "lime",
+            "generation": "2.0",
+            "operating_status": "in_service",
+            "provider": "Lime"
+          }
+        },
+        {
+          "id": "ET-3Q5DQC7QR3GFKUQFUVGRGUK7PYNU5XCPU7N7ICI",
+          "type": "bikes",
+          "attributes": {
+            "status": "locked",
+            "plate_number": "XXX-FRA",
+            "latitude": 45.793692,
+            "longitude": 24.15372,
+            "battery_percentage": 23,
+            "swappable_battery": false,
+            "last_activity_at": "2021-12-27T17:43:42.000Z",
+            "type_name": "scooter",
+            "battery_level": "low",
+            "meter_range": 1277,
+            "rate_plan": "FREE to unlock +\n0.50 Lei / 1 min",
+            "bike_icon_id": 48,
+            "last_three": "FRA",
+            "license_plate_number": null,
+            "brand": "lime",
+            "generation": "2.0",
+            "operating_status": "in_service",
+            "provider": "Lime"
+          }
+        },
+        {
+          "id": "ET-6BP4ZAMCQY4SIC75WJRVQCITLV3RD7TSFSUP2EI",
+          "type": "bikes",
+          "attributes": {
+            "status": "locked",
+            "plate_number": "XXX-ALN",
+            "latitude": 45.798704,
+            "longitude": 24.163512,
+            "battery_percentage": 38,
+            "swappable_battery": false,
+            "last_activity_at": "2021-12-27T17:51:00.000Z",
+            "type_name": "scooter",
+            "battery_level": "medium",
+            "meter_range": 3485,
+            "rate_plan": "FREE to unlock +\n0.50 Lei / 1 min",
+            "bike_icon_id": 49,
+            "last_three": "ALN",
+            "license_plate_number": null,
+            "brand": "lime",
+            "generation": "2.0",
+            "operating_status": "in_service",
+            "provider": "Lime"
+          }
+        },
+        {
+          "id": "ET-T47KUSVABKY6TZYQB2OCCIJY4IWUSFHO7TPYOPA",
+          "type": "bikes",
+          "attributes": {
+            "status": "locked",
+            "plate_number": "XXX-VZS",
+            "latitude": 45.798346,
+            "longitude": 24.147616,
+            "battery_percentage": 33,
+            "swappable_battery": false,
+            "last_activity_at": "2021-12-27T18:24:23.000Z",
+            "type_name": "scooter",
+            "battery_level": "medium",
+            "meter_range": 2628,
+            "rate_plan": "FREE to unlock +\n0.50 Lei / 1 min",
+            "bike_icon_id": 49,
+            "last_three": "VZS",
+            "license_plate_number": null,
+            "brand": "lime",
+            "generation": "2.0",
+            "operating_status": "in_service",
+            "provider": "Lime"
+          }
+        },
+        {
+          "id": "ET-AQ7E7MJHU6XAKUBK5EOFPCCWPXLOP4VASLLAPZI",
+          "type": "bikes",
+          "attributes": {
+            "status": "locked",
+            "plate_number": "XXX-BXD",
+            "latitude": 45.796594,
+            "longitude": 24.148016,
+            "battery_percentage": 20,
+            "swappable_battery": false,
+            "last_activity_at": "2021-12-27T18:12:47.000Z",
+            "type_name": "scooter",
+            "battery_level": "low",
+            "meter_range": 965,
+            "rate_plan": "FREE to unlock +\n0.50 Lei / 1 min",
+            "bike_icon_id": 48,
+            "last_three": "BXD",
+            "license_plate_number": null,
+            "brand": "lime",
+            "generation": "2.0",
+            "operating_status": "in_service",
+            "provider": "Lime"
+          }
+        },
+        {
+          "id": "ET-7TBIKONSUF4V3DLQRQFVII2W7HQQZ66TWCGWG3Y",
+          "type": "bikes",
+          "attributes": {
+            "status": "locked",
+            "plate_number": "XXX-URR",
+            "latitude": 45.796819,
+            "longitude": 24.147078,
+            "battery_percentage": 77,
+            "swappable_battery": false,
+            "last_activity_at": "2021-12-27T18:28:01.000Z",
+            "type_name": "scooter",
+            "battery_level": "high",
+            "meter_range": 14312,
+            "rate_plan": "FREE to unlock +\n0.50 Lei / 1 min",
+            "bike_icon_id": 50,
+            "last_three": "URR",
+            "license_plate_number": null,
+            "brand": "lime",
+            "generation": "2.0",
+            "operating_status": "in_service",
+            "provider": "Lime"
+          }
+        },
+        {
+          "id": "ET-NP6HWGEF42N6P7D6ND3OREE2LBXRFGG3ZSHOHSQ",
+          "type": "bikes",
+          "attributes": {
+            "status": "locked",
+            "plate_number": "XXX-DSP",
+            "latitude": 45.799103,
+            "longitude": 24.146131,
+            "battery_percentage": 38,
+            "swappable_battery": false,
+            "last_activity_at": "2021-12-27T18:27:58.000Z",
+            "type_name": "scooter",
+            "battery_level": "medium",
+            "meter_range": 3485,
+            "rate_plan": "FREE to unlock +\n0.50 Lei / 1 min",
+            "bike_icon_id": 49,
+            "last_three": "DSP",
+            "license_plate_number": null,
+            "brand": "lime",
+            "generation": "2.0",
+            "operating_status": "in_service",
+            "provider": "Lime"
+          }
+        },
+        {
+          "id": "ET-I7TOCKXYXYHR3ZAPWY3CILYKQY75YZ5JZQQ3TCY",
+          "type": "bikes",
+          "attributes": {
+            "status": "locked",
+            "plate_number": "XXX-MAU",
+            "latitude": 45.799683,
+            "longitude": 24.145349,
+            "battery_percentage": 40,
+            "swappable_battery": false,
+            "last_activity_at": "2021-12-27T18:38:37.000Z",
+            "type_name": "scooter",
+            "battery_level": "medium",
+            "meter_range": 3862,
+            "rate_plan": "FREE to unlock +\n0.50 Lei / 1 min",
+            "bike_icon_id": 49,
+            "last_three": "MAU",
+            "license_plate_number": null,
+            "brand": "lime",
+            "generation": "2.0",
+            "operating_status": "in_service",
+            "provider": "Lime"
+          }
+        },
+        {
+          "id": "ET-2OO5GA5BO7G2A4IRDEOZDSOWT5FLG76TYBSZV4I",
+          "type": "bikes",
+          "attributes": {
+            "status": "locked",
+            "plate_number": "XXX-GKG",
+            "latitude": 45.792963,
+            "longitude": 24.149021,
+            "battery_percentage": 41,
+            "swappable_battery": false,
+            "last_activity_at": "2021-12-27T17:59:46.000Z",
+            "type_name": "scooter",
+            "battery_level": "medium",
+            "meter_range": 4057,
+            "rate_plan": "FREE to unlock +\n0.50 Lei / 1 min",
+            "bike_icon_id": 49,
+            "last_three": "GKG",
+            "license_plate_number": null,
+            "brand": "lime",
+            "generation": "2.0",
+            "operating_status": "in_service",
+            "provider": "Lime"
+          }
+        },
+        {
+          "id": "ET-VTMBX4G45EZ73O45BJ7JDVRDXRAMNONRVY7DKYY",
+          "type": "bikes",
+          "attributes": {
+            "status": "locked",
+            "plate_number": "XXX-GVJ",
+            "latitude": 45.792912,
+            "longitude": 24.149012,
+            "battery_percentage": 32,
+            "swappable_battery": false,
+            "last_activity_at": "2021-12-27T18:09:09.000Z",
+            "type_name": "scooter",
+            "battery_level": "medium",
+            "meter_range": 2471,
+            "rate_plan": "FREE to unlock +\n0.50 Lei / 1 min",
+            "bike_icon_id": 49,
+            "last_three": "GVJ",
+            "license_plate_number": null,
+            "brand": "lime",
+            "generation": "2.0",
+            "operating_status": "in_service",
+            "provider": "Lime"
+          }
+        },
+        {
+          "id": "ET-JBEESTQ6ENFLB5AYUPMPRFFJD36ATVTYHHMA4KI",
+          "type": "bikes",
+          "attributes": {
+            "status": "locked",
+            "plate_number": "XXX-DQR",
+            "latitude": 45.792914,
+            "longitude": 24.148925,
+            "battery_percentage": 42,
+            "swappable_battery": false,
+            "last_activity_at": "2021-12-27T18:00:08.000Z",
+            "type_name": "scooter",
+            "battery_level": "medium",
+            "meter_range": 4258,
+            "rate_plan": "FREE to unlock +\n0.50 Lei / 1 min",
+            "bike_icon_id": 49,
+            "last_three": "DQR",
+            "license_plate_number": null,
+            "brand": "lime",
+            "generation": "2.0",
+            "operating_status": "in_service",
+            "provider": "Lime"
+          }
+        },
+        {
+          "id": "ET-ULXLFK6MRTEHDCBLGK6YOWFBAPFCI5GNLV6CIRQ",
+          "type": "bikes",
+          "attributes": {
+            "status": "locked",
+            "plate_number": "XXX-FHP",
+            "latitude": 45.796565,
+            "longitude": 24.144063,
+            "battery_percentage": 34,
+            "swappable_battery": false,
+            "last_activity_at": "2021-12-27T18:07:45.000Z",
+            "type_name": "scooter",
+            "battery_level": "medium",
+            "meter_range": 2790,
+            "rate_plan": "FREE to unlock +\n0.50 Lei / 1 min",
+            "bike_icon_id": 49,
+            "last_three": "FHP",
+            "license_plate_number": null,
+            "brand": "lime",
+            "generation": "2.0",
+            "operating_status": "in_service",
+            "provider": "Lime"
+          }
+        },
+        {
+          "id": "ET-FBBTMKF2OGPNAPKLB7FBXHCCAIJ4BGWBQQZBWTQ",
+          "type": "bikes",
+          "attributes": {
+            "status": "locked",
+            "plate_number": "XXX-XPA",
+            "latitude": 45.804833,
+            "longitude": 24.146025,
+            "battery_percentage": 29,
+            "swappable_battery": false,
+            "last_activity_at": "2021-12-27T18:20:48.000Z",
+            "type_name": "scooter",
+            "battery_level": "low",
+            "meter_range": 2030,
+            "rate_plan": "FREE to unlock +\n0.50 Lei / 1 min",
+            "bike_icon_id": 48,
+            "last_three": "XPA",
+            "license_plate_number": null,
+            "brand": "lime",
+            "generation": "2.0",
+            "operating_status": "in_service",
+            "provider": "Lime"
+          }
+        },
+        {
+          "id": "ET-SXNJRZ7JZ7ZZ4EVX4EYE4IJ66J2C57WP5XYJI7Y",
+          "type": "bikes",
+          "attributes": {
+            "status": "locked",
+            "plate_number": "XXX-KKJ",
+            "latitude": 45.795568,
+            "longitude": 24.143856,
+            "battery_percentage": 26,
+            "swappable_battery": false,
+            "last_activity_at": "2021-12-27T18:16:00.000Z",
+            "type_name": "scooter",
+            "battery_level": "low",
+            "meter_range": 1631,
+            "rate_plan": "FREE to unlock +\n0.50 Lei / 1 min",
+            "bike_icon_id": 48,
+            "last_three": "KKJ",
+            "license_plate_number": null,
+            "brand": "lime",
+            "generation": "2.0",
+            "operating_status": "in_service",
+            "provider": "Lime"
+          }
+        },
+        {
+          "id": "ET-5DGFN7LKMJGXQ67GHLPTPILZZIZRN66XYEYR3ZA",
+          "type": "bikes",
+          "attributes": {
+            "status": "locked",
+            "plate_number": "XXX-BWN",
+            "latitude": 45.792256,
+            "longitude": 24.146753,
+            "battery_percentage": 22,
+            "swappable_battery": false,
+            "last_activity_at": "2021-12-27T18:33:51.000Z",
+            "type_name": "scooter",
+            "battery_level": "low",
+            "meter_range": 1168,
+            "rate_plan": "FREE to unlock +\n0.50 Lei / 1 min",
+            "bike_icon_id": 48,
+            "last_three": "BWN",
+            "license_plate_number": null,
+            "brand": "lime",
+            "generation": "2.0",
+            "operating_status": "in_service",
+            "provider": "Lime"
+          }
+        },
+        {
+          "id": "ET-RMQVNMJNEDVMG55P726NPYRLA7KMYS4THHIQOOI",
+          "type": "bikes",
+          "attributes": {
+            "status": "locked",
+            "plate_number": "XXX-QSW",
+            "latitude": 45.792129,
+            "longitude": 24.146735,
+            "battery_percentage": 21,
+            "swappable_battery": false,
+            "last_activity_at": "2021-12-27T18:36:07.000Z",
+            "type_name": "scooter",
+            "battery_level": "low",
+            "meter_range": 1064,
+            "rate_plan": "FREE to unlock +\n0.50 Lei / 1 min",
+            "bike_icon_id": 48,
+            "last_three": "QSW",
+            "license_plate_number": null,
+            "brand": "lime",
+            "generation": "2.0",
+            "operating_status": "in_service",
+            "provider": "Lime"
+          }
+        },
+        {
+          "id": "ET-WEI4FI54MUEZNSYH5INOIQG54UGCGEAZWI6KBII",
+          "type": "bikes",
+          "attributes": {
+            "status": "locked",
+            "plate_number": "XXX-NTW",
+            "latitude": 45.792081,
+            "longitude": 24.146601,
+            "battery_percentage": 69,
+            "swappable_battery": false,
+            "last_activity_at": "2021-12-27T18:31:10.000Z",
+            "type_name": "scooter",
+            "battery_level": "high",
+            "meter_range": 11493,
+            "rate_plan": "FREE to unlock +\n0.50 Lei / 1 min",
+            "bike_icon_id": 50,
+            "last_three": "NTW",
+            "license_plate_number": null,
+            "brand": "lime",
+            "generation": "2.0",
+            "operating_status": "in_service",
+            "provider": "Lime"
+          }
+        },
+        {
+          "id": "ET-J644QMVFTSCAJWTI76UFIWSGTYMBVEPYBLJA55Q",
+          "type": "bikes",
+          "attributes": {
+            "status": "locked",
+            "plate_number": "XXX-SPT",
+            "latitude": 45.793408,
+            "longitude": 24.144431,
+            "battery_percentage": 20,
+            "swappable_battery": false,
+            "last_activity_at": "2021-12-27T18:22:11.000Z",
+            "type_name": "scooter",
+            "battery_level": "low",
+            "meter_range": 965,
+            "rate_plan": "FREE to unlock +\n0.50 Lei / 1 min",
+            "bike_icon_id": 48,
+            "last_three": "SPT",
+            "license_plate_number": null,
+            "brand": "lime",
+            "generation": "2.0",
+            "operating_status": "in_service",
+            "provider": "Lime"
+          }
+        },
+        {
+          "id": "ET-EEYSCNA2ULGKCVGIVGTMKLF7JIQMWXHCYI55MWA",
+          "type": "bikes",
+          "attributes": {
+            "status": "locked",
+            "plate_number": "XXX-WRU",
+            "latitude": 45.78961,
+            "longitude": 24.150975,
+            "battery_percentage": 24,
+            "swappable_battery": false,
+            "last_activity_at": "2021-12-27T18:17:48.000Z",
+            "type_name": "scooter",
+            "battery_level": "low",
+            "meter_range": 1390,
+            "rate_plan": "FREE to unlock +\n0.50 Lei / 1 min",
+            "bike_icon_id": 48,
+            "last_three": "WRU",
+            "license_plate_number": null,
+            "brand": "lime",
+            "generation": "2.0",
+            "operating_status": "in_service",
+            "provider": "Lime"
+          }
+        },
+        {
+          "id": "ET-6HOO5KF5XXGIUI32KGYYRJKB6HUNUMDXRRTFHLA",
+          "type": "bikes",
+          "attributes": {
+            "status": "locked",
+            "plate_number": "XXX-PDW",
+            "latitude": 45.788773,
+            "longitude": 24.153803,
+            "battery_percentage": 23,
+            "swappable_battery": false,
+            "last_activity_at": "2021-12-27T18:20:54.000Z",
+            "type_name": "scooter",
+            "battery_level": "low",
+            "meter_range": 1277,
+            "rate_plan": "FREE to unlock +\n0.50 Lei / 1 min",
+            "bike_icon_id": 48,
+            "last_three": "PDW",
+            "license_plate_number": null,
+            "brand": "lime",
+            "generation": "2.0",
+            "operating_status": "in_service",
+            "provider": "Lime"
+          }
+        },
+        {
+          "id": "ET-HIDGOODOJADTMII3MOSZISTWY54YNI7SZ5E6Q4Q",
+          "type": "bikes",
+          "attributes": {
+            "status": "locked",
+            "plate_number": "XXX-CVC",
+            "latitude": 45.787213,
+            "longitude": 24.149228,
+            "battery_percentage": 28,
+            "swappable_battery": false,
+            "last_activity_at": "2021-12-27T18:28:35.000Z",
+            "type_name": "scooter",
+            "battery_level": "low",
+            "meter_range": 1892,
+            "rate_plan": "FREE to unlock +\n0.50 Lei / 1 min",
+            "bike_icon_id": 48,
+            "last_three": "CVC",
+            "license_plate_number": null,
+            "brand": "lime",
+            "generation": "2.0",
+            "operating_status": "in_service",
+            "provider": "Lime"
+          }
+        },
+        {
+          "id": "ET-OITD5BLIBUWQWCJCCD2RQLXKIXLBBSAVYULHZYQ",
+          "type": "bikes",
+          "attributes": {
+            "status": "locked",
+            "plate_number": "XXX-ZEY",
+            "latitude": 45.786506,
+            "longitude": 24.152702,
+            "battery_percentage": 27,
+            "swappable_battery": false,
+            "last_activity_at": "2021-12-27T18:22:36.000Z",
+            "type_name": "scooter",
+            "battery_level": "low",
+            "meter_range": 1759,
+            "rate_plan": "FREE to unlock +\n0.50 Lei / 1 min",
+            "bike_icon_id": 48,
+            "last_three": "ZEY",
+            "license_plate_number": null,
+            "brand": "lime",
+            "generation": "2.0",
+            "operating_status": "in_service",
+            "provider": "Lime"
+          }
+        },
+        {
+          "id": "ET-2KRXB37HXRBPIMQSYBYGJU2J5LY6GQVVGPFQSPQ",
+          "type": "bikes",
+          "attributes": {
+            "status": "locked",
+            "plate_number": "XXX-NCG",
+            "latitude": 45.787137,
+            "longitude": 24.171978,
+            "battery_percentage": 28,
+            "swappable_battery": false,
+            "last_activity_at": "2021-12-27T18:22:42.000Z",
+            "type_name": "scooter",
+            "battery_level": "low",
+            "meter_range": 1892,
+            "rate_plan": "FREE to unlock +\n0.50 Lei / 1 min",
+            "bike_icon_id": 48,
+            "last_three": "NCG",
+            "license_plate_number": null,
+            "brand": "lime",
+            "generation": "2.0",
+            "operating_status": "in_service",
+            "provider": "Lime"
+          }
+        },
+        {
+          "id": "ET-3IKO2ZMHETKBTXLIF4I34TWGRNJ43L7GM4AZS3Y",
+          "type": "bikes",
+          "attributes": {
+            "status": "locked",
+            "plate_number": "XXX-FGQ",
+            "latitude": 45.787446,
+            "longitude": 24.174656,
+            "battery_percentage": 26,
+            "swappable_battery": false,
+            "last_activity_at": "2021-12-27T17:56:06.000Z",
+            "type_name": "scooter",
+            "battery_level": "low",
+            "meter_range": 1631,
+            "rate_plan": "FREE to unlock +\n0.50 Lei / 1 min",
+            "bike_icon_id": 48,
+            "last_three": "FGQ",
+            "license_plate_number": null,
+            "brand": "lime",
+            "generation": "2.0",
+            "operating_status": "in_service",
+            "provider": "Lime"
+          }
+        },
+        {
+          "id": "ET-4CTAOY3VC7FXHBV5H4VQTJRGNEBGUDSBTAGTIZI",
+          "type": "bikes",
+          "attributes": {
+            "status": "locked",
+            "plate_number": "XXX-JXS",
+            "latitude": 45.787801,
+            "longitude": 24.176159,
+            "battery_percentage": 21,
+            "swappable_battery": false,
+            "last_activity_at": "2021-12-27T17:44:20.000Z",
+            "type_name": "scooter",
+            "battery_level": "low",
+            "meter_range": 1064,
+            "rate_plan": "FREE to unlock +\n0.50 Lei / 1 min",
+            "bike_icon_id": 48,
+            "last_three": "JXS",
+            "license_plate_number": null,
+            "brand": "lime",
+            "generation": "2.0",
+            "operating_status": "in_service",
+            "provider": "Lime"
+          }
+        },
+        {
+          "id": "ET-ROSZIIBL57V6PT7A6SSGVZG2WI42TC7Q43VRIDQ",
+          "type": "bikes",
+          "attributes": {
+            "status": "locked",
+            "plate_number": "XXX-ZZR",
+            "latitude": 45.785729,
+            "longitude": 24.174241,
+            "battery_percentage": 42,
+            "swappable_battery": false,
+            "last_activity_at": "2021-12-27T18:37:56.000Z",
+            "type_name": "scooter",
+            "battery_level": "medium",
+            "meter_range": 4258,
+            "rate_plan": "FREE to unlock +\n0.50 Lei / 1 min",
+            "bike_icon_id": 49,
+            "last_three": "ZZR",
+            "license_plate_number": null,
+            "brand": "lime",
+            "generation": "2.0",
+            "operating_status": "in_service",
+            "provider": "Lime"
+          }
+        },
+        {
+          "id": "ET-Y5SUOMKQPU37P3ZHAPIZPJRAM3P24A46WGIZT7Y",
+          "type": "bikes",
+          "attributes": {
+            "status": "locked",
+            "plate_number": "XXX-JHA",
+            "latitude": 45.774729,
+            "longitude": 24.151892,
+            "battery_percentage": 36,
+            "swappable_battery": false,
+            "last_activity_at": "2021-12-27T18:39:31.000Z",
+            "type_name": "scooter",
+            "battery_level": "medium",
+            "meter_range": 3128,
+            "rate_plan": "FREE to unlock +\n0.50 Lei / 1 min",
+            "bike_icon_id": 49,
+            "last_three": "JHA",
+            "license_plate_number": null,
+            "brand": "lime",
+            "generation": "2.0",
+            "operating_status": "in_service",
+            "provider": "Lime"
+          }
+        },
+        {
+          "id": "ET-7OLZ6VIIFMX2645CYHGJL45ZB54X5G5H67YNK6Q",
+          "type": "bikes",
+          "attributes": {
+            "status": "locked",
+            "plate_number": "XXX-JHE",
+            "latitude": 45.774924,
+            "longitude": 24.161652,
+            "battery_percentage": 33,
+            "swappable_battery": false,
+            "last_activity_at": "2021-12-27T17:44:23.000Z",
+            "type_name": "scooter",
+            "battery_level": "medium",
+            "meter_range": 2628,
+            "rate_plan": "FREE to unlock +\n0.50 Lei / 1 min",
+            "bike_icon_id": 49,
+            "last_three": "JHE",
+            "license_plate_number": null,
+            "brand": "lime",
+            "generation": "2.0",
+            "operating_status": "in_service",
+            "provider": "Lime"
+          }
+        },
+        {
+          "id": "ET-2MCLG6KUICE3DIE4UF5SWCH2HPNPJA4W6FUP4SY",
+          "type": "bikes",
+          "attributes": {
+            "status": "locked",
+            "plate_number": "XXX-LEA",
+            "latitude": 45.775206,
+            "longitude": 24.161385,
+            "battery_percentage": 29,
+            "swappable_battery": false,
+            "last_activity_at": "2021-12-27T18:02:08.000Z",
+            "type_name": "scooter",
+            "battery_level": "low",
+            "meter_range": 2030,
+            "rate_plan": "FREE to unlock +\n0.50 Lei / 1 min",
+            "bike_icon_id": 48,
+            "last_three": "LEA",
+            "license_plate_number": null,
+            "brand": "lime",
+            "generation": "2.0",
+            "operating_status": "in_service",
+            "provider": "Lime"
+          }
+        },
+        {
+          "id": "ET-5MACBA6M4EIIJL24OQHN53PAGSZVRZQHL553Q2Q",
+          "type": "bikes",
+          "attributes": {
+            "status": "locked",
+            "plate_number": "XXX-BUQ",
+            "latitude": 45.775222,
+            "longitude": 24.161355,
+            "battery_percentage": 43,
+            "swappable_battery": false,
+            "last_activity_at": "2021-12-27T18:21:57.000Z",
+            "type_name": "scooter",
+            "battery_level": "medium",
+            "meter_range": 4463,
+            "rate_plan": "FREE to unlock +\n0.50 Lei / 1 min",
+            "bike_icon_id": 49,
+            "last_three": "BUQ",
+            "license_plate_number": null,
+            "brand": "lime",
+            "generation": "2.0",
+            "operating_status": "in_service",
+            "provider": "Lime"
+          }
+        }
+      ],
+      "group_ride_reserved_pins": [],
+      "selected_bike": null,
+      "bike_pins": [
+        {
+          "id": "ET-XCVZR67CLVSKQLS4ESIBKDDF357SGONV5V6JY3Q",
+          "type": "scooter",
+          "pin": {
+            "selected_icon_id": 347,
+            "unselected_icon_id": 348,
+            "selected_overlay_icon_id": null,
+            "unselected_overlay_icon_id": null
+          },
+          "location": {
+            "latitude": 45.799091,
+            "longitude": 24.154072
+          },
+          "secondary_id": "179EF52E8D9BCD0FD39D9A3968B0B379",
+          "provider": "Lime"
+        },
+        {
+          "id": "ET-JQWMZN647ZMGXJJFNNES3RXVPTIBB3VOQYYMN6Q",
+          "type": "scooter",
+          "pin": {
+            "selected_icon_id": 347,
+            "unselected_icon_id": 348,
+            "selected_overlay_icon_id": null,
+            "unselected_overlay_icon_id": null
+          },
+          "location": {
+            "latitude": 45.799205,
+            "longitude": 24.158408
+          },
+          "secondary_id": "5A4A43BCD0A57679062251AAA6A03EEB",
+          "provider": "Lime"
+        },
+        {
+          "id": "ET-5GF3OI5G2VIHR7KLO2MSE7VPXIHWF2ATBN5GTSI",
+          "type": "scooter",
+          "pin": {
+            "selected_icon_id": 345,
+            "unselected_icon_id": 346,
+            "selected_overlay_icon_id": null,
+            "unselected_overlay_icon_id": null
+          },
+          "location": {
+            "latitude": 45.796932,
+            "longitude": 24.153855
+          },
+          "secondary_id": "73301DA55AAADCCD0D0FA4791963E3D5",
+          "provider": "Lime"
+        },
+        {
+          "id": "ET-5YSXUZ6N2YXCWROVRGYZXRDU4HPW5QO7NFIGMPQ",
+          "type": "scooter",
+          "pin": {
+            "selected_icon_id": 345,
+            "unselected_icon_id": 346,
+            "selected_overlay_icon_id": null,
+            "unselected_overlay_icon_id": null
+          },
+          "location": {
+            "latitude": 45.800325,
+            "longitude": 24.158617
+          },
+          "secondary_id": "E11F753D847541C9523D83EB53E90B50",
+          "provider": "Lime"
+        },
+        {
+          "id": "ET-CBNOC54MRJ7VIUW3TLCSH5PHKHP4KY6XTHO4QNQ",
+          "type": "scooter",
+          "pin": {
+            "selected_icon_id": 345,
+            "unselected_icon_id": 346,
+            "selected_overlay_icon_id": null,
+            "unselected_overlay_icon_id": null
+          },
+          "location": {
+            "latitude": 45.799777,
+            "longitude": 24.15218
+          },
+          "secondary_id": "733B0B257E1AC3F358839DBBF4B9237C",
+          "provider": "Lime"
+        },
+        {
+          "id": "ET-AECVPIA6DJAM5TEWAGSSY5HCFZT2ORGXIXG5S3Y",
+          "type": "scooter",
+          "pin": {
+            "selected_icon_id": 345,
+            "unselected_icon_id": 346,
+            "selected_overlay_icon_id": null,
+            "unselected_overlay_icon_id": null
+          },
+          "location": {
+            "latitude": 45.800821,
+            "longitude": 24.158534
+          },
+          "secondary_id": "73103C26E74A47B1505A4A83C53874B1",
+          "provider": "Lime"
+        },
+        {
+          "id": "ET-5PAJWXLCBSVAEUD6BIAQILKY2VNWQ2BGXNR4XEY",
+          "type": "scooter",
+          "pin": {
+            "selected_icon_id": 355,
+            "unselected_icon_id": 356,
+            "selected_overlay_icon_id": null,
+            "unselected_overlay_icon_id": null
+          },
+          "location": {
+            "latitude": 45.799703,
+            "longitude": 24.15124
+          },
+          "secondary_id": "8ED1CD713A7E7C2479AFF1B06CCE9884",
+          "provider": "Lime"
+        },
+        {
+          "id": "ET-D6ZACJ4LQ5FEDMD6S75AW6TALYTK7TCOJ3PAG5I",
+          "type": "scooter",
+          "pin": {
+            "selected_icon_id": 351,
+            "unselected_icon_id": 352,
+            "selected_overlay_icon_id": null,
+            "unselected_overlay_icon_id": null
+          },
+          "location": {
+            "latitude": 45.798488,
+            "longitude": 24.16019
+          },
+          "secondary_id": "5DDB0216B4C5BC1D978FCE02CBABF158",
+          "provider": "Lime"
+        },
+        {
+          "id": "ET-O7TBGNQTZIDUYGFAEXXS7TSYWIZSF2QEYIGQYWQ",
+          "type": "scooter",
+          "pin": {
+            "selected_icon_id": 343,
+            "unselected_icon_id": 344,
+            "selected_overlay_icon_id": null,
+            "unselected_overlay_icon_id": null
+          },
+          "location": {
+            "latitude": 45.796424,
+            "longitude": 24.152553
+          },
+          "secondary_id": "0E21711F3272301553D89D0B0471C4CB",
+          "provider": "Lime"
+        },
+        {
+          "id": "ET-X7QQMTGZYDNSW3LIJ7QZZ3BLXI6W6V2XLYLI5SQ",
+          "type": "scooter",
+          "pin": {
+            "selected_icon_id": 343,
+            "unselected_icon_id": 344,
+            "selected_overlay_icon_id": null,
+            "unselected_overlay_icon_id": null
+          },
+          "location": {
+            "latitude": 45.800359,
+            "longitude": 24.160583
+          },
+          "secondary_id": "7C0C666F54EEFF901A76897405AD27BD",
+          "provider": "Lime"
+        },
+        {
+          "id": "ET-ZI6LMG2MVGP5H72HL3CCXZ35OXYBHYTQK7YBD5I",
+          "type": "scooter",
+          "pin": {
+            "selected_icon_id": 347,
+            "unselected_icon_id": 348,
+            "selected_overlay_icon_id": null,
+            "unselected_overlay_icon_id": null
+          },
+          "location": {
+            "latitude": 45.800349,
+            "longitude": 24.160632
+          },
+          "secondary_id": "03AF1FD2AEC893A7F1F21E211418C677",
+          "provider": "Lime"
+        },
+        {
+          "id": "ET-ON7BMHZKJFL2T5DL7ZKDMRHM2CHLJ4WTM5UKYBI",
+          "type": "scooter",
+          "pin": {
+            "selected_icon_id": 343,
+            "unselected_icon_id": 344,
+            "selected_overlay_icon_id": null,
+            "unselected_overlay_icon_id": null
+          },
+          "location": {
+            "latitude": 45.800369,
+            "longitude": 24.160626
+          },
+          "secondary_id": "3107C042C94032BD48C48D20ABC07EC7",
+          "provider": "Lime"
+        },
+        {
+          "id": "ET-FO6U7OFBKCV7YPMBIUPOHYLYGHXWT2X5ZOAQK3Y",
+          "type": "scooter",
+          "pin": {
+            "selected_icon_id": 355,
+            "unselected_icon_id": 356,
+            "selected_overlay_icon_id": null,
+            "unselected_overlay_icon_id": null
+          },
+          "location": {
+            "latitude": 45.799992,
+            "longitude": 24.160815
+          },
+          "secondary_id": "E1307888D8D8098A77CF1D20D6246A46",
+          "provider": "Lime"
+        },
+        {
+          "id": "ET-IGOLZCVXAZV3IGQOFZPDALOYRJV7OPRH4CVRPEI",
+          "type": "scooter",
+          "pin": {
+            "selected_icon_id": 349,
+            "unselected_icon_id": 350,
+            "selected_overlay_icon_id": null,
+            "unselected_overlay_icon_id": null
+          },
+          "location": {
+            "latitude": 45.800408,
+            "longitude": 24.160631
+          },
+          "secondary_id": "3D668044DCEB657331FFC70CE91C252E",
+          "provider": "Lime"
+        },
+        {
+          "id": "ET-HSAS6PQSA7QF4BUX522MCB3QX37DWGMNOKSCIQI",
+          "type": "scooter",
+          "pin": {
+            "selected_icon_id": 347,
+            "unselected_icon_id": 348,
+            "selected_overlay_icon_id": null,
+            "unselected_overlay_icon_id": null
+          },
+          "location": {
+            "latitude": 45.79979,
+            "longitude": 24.161159
+          },
+          "secondary_id": "4B819E045C535290F787E5788FDEFB3F",
+          "provider": "Lime"
+        },
+        {
+          "id": "ET-BPTAPIFYUHAFD7NFJGAXGW7MNZWOSEUJFYOENII",
+          "type": "scooter",
+          "pin": {
+            "selected_icon_id": 347,
+            "unselected_icon_id": 348,
+            "selected_overlay_icon_id": null,
+            "unselected_overlay_icon_id": null
+          },
+          "location": {
+            "latitude": 45.798903,
+            "longitude": 24.149531
+          },
+          "secondary_id": "5C75BDEB66DD3BF816A5237358A28BFE",
+          "provider": "Lime"
+        },
+        {
+          "id": "ET-F47BQCDT6XVPLTGAZXGAK5JLUGIZE7G6GEFEXII",
+          "type": "scooter",
+          "pin": {
+            "selected_icon_id": 345,
+            "unselected_icon_id": 346,
+            "selected_overlay_icon_id": null,
+            "unselected_overlay_icon_id": null
+          },
+          "location": {
+            "latitude": 45.79741,
+            "longitude": 24.161492
+          },
+          "secondary_id": "88D6694B93B7AD22347109648D436970",
+          "provider": "Lime"
+        },
+        {
+          "id": "ET-AJ3SKG6NID4MPO3YDNY462PADZLHSBPGBXDU27I",
+          "type": "scooter",
+          "pin": {
+            "selected_icon_id": 345,
+            "unselected_icon_id": 346,
+            "selected_overlay_icon_id": null,
+            "unselected_overlay_icon_id": null
+          },
+          "location": {
+            "latitude": 45.797343,
+            "longitude": 24.161549
+          },
+          "secondary_id": "88F684D097BEFCBA49AC5ABEEA3394FD",
+          "provider": "Lime"
+        },
+        {
+          "id": "ET-3OQVL4HJDPLSUUNBVCQ6SGNRRHDZN7IUU42TXKI",
+          "type": "scooter",
+          "pin": {
+            "selected_icon_id": 345,
+            "unselected_icon_id": 346,
+            "selected_overlay_icon_id": null,
+            "unselected_overlay_icon_id": null
+          },
+          "location": {
+            "latitude": 45.795066,
+            "longitude": 24.152562
+          },
+          "secondary_id": "5B8A0236E241EDA4466E0DD2D9D5916C",
+          "provider": "Lime"
+        },
+        {
+          "id": "ET-P5E4NFF74CE5VXG2UUS2M54NB2YP45YGA5QG6WI",
+          "type": "scooter",
+          "pin": {
+            "selected_icon_id": 345,
+            "unselected_icon_id": 346,
+            "selected_overlay_icon_id": null,
+            "unselected_overlay_icon_id": null
+          },
+          "location": {
+            "latitude": 45.801861,
+            "longitude": 24.150294
+          },
+          "secondary_id": "0DC4C172A6F4B0CE4DD013E8BE8D4D49",
+          "provider": "Lime"
+        },
+        {
+          "id": "ET-PIUGXGV6QPKOH2SOMXAQAHI3V7XBR5KB2QIF3ZI",
+          "type": "scooter",
+          "pin": {
+            "selected_icon_id": 347,
+            "unselected_icon_id": 348,
+            "selected_overlay_icon_id": null,
+            "unselected_overlay_icon_id": null
+          },
+          "location": {
+            "latitude": 45.797956,
+            "longitude": 24.162593
+          },
+          "secondary_id": "1A9D9EC9E74DAEFA0884423C328F5181",
+          "provider": "Lime"
+        },
+        {
+          "id": "ET-3Q5DQC7QR3GFKUQFUVGRGUK7PYNU5XCPU7N7ICI",
+          "type": "scooter",
+          "pin": {
+            "selected_icon_id": 343,
+            "unselected_icon_id": 344,
+            "selected_overlay_icon_id": null,
+            "unselected_overlay_icon_id": null
+          },
+          "location": {
+            "latitude": 45.793692,
+            "longitude": 24.15372
+          },
+          "secondary_id": "0AB39B294A1EC81368AF886C9BAFE268",
+          "provider": "Lime"
+        },
+        {
+          "id": "ET-6BP4ZAMCQY4SIC75WJRVQCITLV3RD7TSFSUP2EI",
+          "type": "scooter",
+          "pin": {
+            "selected_icon_id": 347,
+            "unselected_icon_id": 348,
+            "selected_overlay_icon_id": null,
+            "unselected_overlay_icon_id": null
+          },
+          "location": {
+            "latitude": 45.798704,
+            "longitude": 24.163512
+          },
+          "secondary_id": "2FF9399B558A76DE97BE57F6C1CD0E27",
+          "provider": "Lime"
+        },
+        {
+          "id": "ET-T47KUSVABKY6TZYQB2OCCIJY4IWUSFHO7TPYOPA",
+          "type": "scooter",
+          "pin": {
+            "selected_icon_id": 345,
+            "unselected_icon_id": 346,
+            "selected_overlay_icon_id": null,
+            "unselected_overlay_icon_id": null
+          },
+          "location": {
+            "latitude": 45.798346,
+            "longitude": 24.147616
+          },
+          "secondary_id": "5A37CDBE9EA2ABE9C6D2CBA3A0FDC1DB",
+          "provider": "Lime"
+        },
+        {
+          "id": "ET-AQ7E7MJHU6XAKUBK5EOFPCCWPXLOP4VASLLAPZI",
+          "type": "scooter",
+          "pin": {
+            "selected_icon_id": 343,
+            "unselected_icon_id": 344,
+            "selected_overlay_icon_id": null,
+            "unselected_overlay_icon_id": null
+          },
+          "location": {
+            "latitude": 45.796594,
+            "longitude": 24.148016
+          },
+          "secondary_id": "DF8C529F99F2C837E654D484C328E9BC",
+          "provider": "Lime"
+        },
+        {
+          "id": "ET-7TBIKONSUF4V3DLQRQFVII2W7HQQZ66TWCGWG3Y",
+          "type": "scooter",
+          "pin": {
+            "selected_icon_id": 355,
+            "unselected_icon_id": 356,
+            "selected_overlay_icon_id": null,
+            "unselected_overlay_icon_id": null
+          },
+          "location": {
+            "latitude": 45.796819,
+            "longitude": 24.147078
+          },
+          "secondary_id": "CD14B60AC598437F5AA2B8F18ADDF017",
+          "provider": "Lime"
+        },
+        {
+          "id": "ET-NP6HWGEF42N6P7D6ND3OREE2LBXRFGG3ZSHOHSQ",
+          "type": "scooter",
+          "pin": {
+            "selected_icon_id": 347,
+            "unselected_icon_id": 348,
+            "selected_overlay_icon_id": null,
+            "unselected_overlay_icon_id": null
+          },
+          "location": {
+            "latitude": 45.799103,
+            "longitude": 24.146131
+          },
+          "secondary_id": "8046B1F09C60FA00549D7467BF4C5023",
+          "provider": "Lime"
+        },
+        {
+          "id": "ET-I7TOCKXYXYHR3ZAPWY3CILYKQY75YZ5JZQQ3TCY",
+          "type": "scooter",
+          "pin": {
+            "selected_icon_id": 347,
+            "unselected_icon_id": 348,
+            "selected_overlay_icon_id": null,
+            "unselected_overlay_icon_id": null
+          },
+          "location": {
+            "latitude": 45.799683,
+            "longitude": 24.145349
+          },
+          "secondary_id": "93031EFA2F2B905A007A5B3326B9A0F7",
+          "provider": "Lime"
+        },
+        {
+          "id": "ET-2OO5GA5BO7G2A4IRDEOZDSOWT5FLG76TYBSZV4I",
+          "type": "scooter",
+          "pin": {
+            "selected_icon_id": 347,
+            "unselected_icon_id": 348,
+            "selected_overlay_icon_id": null,
+            "unselected_overlay_icon_id": null
+          },
+          "location": {
+            "latitude": 45.792963,
+            "longitude": 24.149021
+          },
+          "secondary_id": "FC45C03061340DDAC13E7D7217E06C2E",
+          "provider": "Lime"
+        },
+        {
+          "id": "ET-VTMBX4G45EZ73O45BJ7JDVRDXRAMNONRVY7DKYY",
+          "type": "scooter",
+          "pin": {
+            "selected_icon_id": 345,
+            "unselected_icon_id": 346,
+            "selected_overlay_icon_id": null,
+            "unselected_overlay_icon_id": null
+          },
+          "location": {
+            "latitude": 45.792912,
+            "longitude": 24.149012
+          },
+          "secondary_id": "D87A1988E916B3AE4882BA2EB680E930",
+          "provider": "Lime"
+        },
+        {
+          "id": "ET-JBEESTQ6ENFLB5AYUPMPRFFJD36ATVTYHHMA4KI",
+          "type": "scooter",
+          "pin": {
+            "selected_icon_id": 347,
+            "unselected_icon_id": 348,
+            "selected_overlay_icon_id": null,
+            "unselected_overlay_icon_id": null
+          },
+          "location": {
+            "latitude": 45.792914,
+            "longitude": 24.148925
+          },
+          "secondary_id": "899D6DED5C10CE6F7D82AFF56204DD46",
+          "provider": "Lime"
+        },
+        {
+          "id": "ET-ULXLFK6MRTEHDCBLGK6YOWFBAPFCI5GNLV6CIRQ",
+          "type": "scooter",
+          "pin": {
+            "selected_icon_id": 345,
+            "unselected_icon_id": 346,
+            "selected_overlay_icon_id": null,
+            "unselected_overlay_icon_id": null
+          },
+          "location": {
+            "latitude": 45.796565,
+            "longitude": 24.144063
+          },
+          "secondary_id": "9C8D97C0F7A5022D34E6C5EA6AD3B81C",
+          "provider": "Lime"
+        },
+        {
+          "id": "ET-FBBTMKF2OGPNAPKLB7FBXHCCAIJ4BGWBQQZBWTQ",
+          "type": "scooter",
+          "pin": {
+            "selected_icon_id": 345,
+            "unselected_icon_id": 346,
+            "selected_overlay_icon_id": null,
+            "unselected_overlay_icon_id": null
+          },
+          "location": {
+            "latitude": 45.804833,
+            "longitude": 24.146025
+          },
+          "secondary_id": "C30210B05C182A346488A39388D57613",
+          "provider": "Lime"
+        },
+        {
+          "id": "ET-SXNJRZ7JZ7ZZ4EVX4EYE4IJ66J2C57WP5XYJI7Y",
+          "type": "scooter",
+          "pin": {
+            "selected_icon_id": 345,
+            "unselected_icon_id": 346,
+            "selected_overlay_icon_id": null,
+            "unselected_overlay_icon_id": null
+          },
+          "location": {
+            "latitude": 45.795568,
+            "longitude": 24.143856
+          },
+          "secondary_id": "7F96A345A4167150C615C9E7A65B3663",
+          "provider": "Lime"
+        },
+        {
+          "id": "ET-5DGFN7LKMJGXQ67GHLPTPILZZIZRN66XYEYR3ZA",
+          "type": "scooter",
+          "pin": {
+            "selected_icon_id": 343,
+            "unselected_icon_id": 344,
+            "selected_overlay_icon_id": null,
+            "unselected_overlay_icon_id": null
+          },
+          "location": {
+            "latitude": 45.792256,
+            "longitude": 24.146753
+          },
+          "secondary_id": "0594462F1985ACFAF060E9687251F657",
+          "provider": "Lime"
+        },
+        {
+          "id": "ET-RMQVNMJNEDVMG55P726NPYRLA7KMYS4THHIQOOI",
+          "type": "scooter",
+          "pin": {
+            "selected_icon_id": 343,
+            "unselected_icon_id": 344,
+            "selected_overlay_icon_id": null,
+            "unselected_overlay_icon_id": null
+          },
+          "location": {
+            "latitude": 45.792129,
+            "longitude": 24.146735
+          },
+          "secondary_id": "CA405F9C3193AF91C4BAB70829912CB6",
+          "provider": "Lime"
+        },
+        {
+          "id": "ET-WEI4FI54MUEZNSYH5INOIQG54UGCGEAZWI6KBII",
+          "type": "scooter",
+          "pin": {
+            "selected_icon_id": 353,
+            "unselected_icon_id": 354,
+            "selected_overlay_icon_id": null,
+            "unselected_overlay_icon_id": null
+          },
+          "location": {
+            "latitude": 45.792081,
+            "longitude": 24.146601
+          },
+          "secondary_id": "EB6F6CB7DC7C90EA8DE485A6F8AFDD57",
+          "provider": "Lime"
+        },
+        {
+          "id": "ET-J644QMVFTSCAJWTI76UFIWSGTYMBVEPYBLJA55Q",
+          "type": "scooter",
+          "pin": {
+            "selected_icon_id": 343,
+            "unselected_icon_id": 344,
+            "selected_overlay_icon_id": null,
+            "unselected_overlay_icon_id": null
+          },
+          "location": {
+            "latitude": 45.793408,
+            "longitude": 24.144431
+          },
+          "secondary_id": "F97861CF20EFDF8A0E74B81F0CD851BC",
+          "provider": "Lime"
+        },
+        {
+          "id": "ET-EEYSCNA2ULGKCVGIVGTMKLF7JIQMWXHCYI55MWA",
+          "type": "scooter",
+          "pin": {
+            "selected_icon_id": 343,
+            "unselected_icon_id": 344,
+            "selected_overlay_icon_id": null,
+            "unselected_overlay_icon_id": null
+          },
+          "location": {
+            "latitude": 45.78961,
+            "longitude": 24.150975
+          },
+          "secondary_id": "C16EE0F04B6601460289464379963CAD",
+          "provider": "Lime"
+        },
+        {
+          "id": "ET-6HOO5KF5XXGIUI32KGYYRJKB6HUNUMDXRRTFHLA",
+          "type": "scooter",
+          "pin": {
+            "selected_icon_id": 343,
+            "unselected_icon_id": 344,
+            "selected_overlay_icon_id": null,
+            "unselected_overlay_icon_id": null
+          },
+          "location": {
+            "latitude": 45.788773,
+            "longitude": 24.153803
+          },
+          "secondary_id": "C672C1A2E0466644369CFA9F0D0D0661",
+          "provider": "Lime"
+        },
+        {
+          "id": "ET-HIDGOODOJADTMII3MOSZISTWY54YNI7SZ5E6Q4Q",
+          "type": "scooter",
+          "pin": {
+            "selected_icon_id": 345,
+            "unselected_icon_id": 346,
+            "selected_overlay_icon_id": null,
+            "unselected_overlay_icon_id": null
+          },
+          "location": {
+            "latitude": 45.787213,
+            "longitude": 24.149228
+          },
+          "secondary_id": "091B5AE90D944A8777C35C7063D4D26D",
+          "provider": "Lime"
+        },
+        {
+          "id": "ET-OITD5BLIBUWQWCJCCD2RQLXKIXLBBSAVYULHZYQ",
+          "type": "scooter",
+          "pin": {
+            "selected_icon_id": 345,
+            "unselected_icon_id": 346,
+            "selected_overlay_icon_id": null,
+            "unselected_overlay_icon_id": null
+          },
+          "location": {
+            "latitude": 45.786506,
+            "longitude": 24.152702
+          },
+          "secondary_id": "3F8CC33F7A6269218290CDB541459942",
+          "provider": "Lime"
+        },
+        {
+          "id": "ET-2KRXB37HXRBPIMQSYBYGJU2J5LY6GQVVGPFQSPQ",
+          "type": "scooter",
+          "pin": {
+            "selected_icon_id": 345,
+            "unselected_icon_id": 346,
+            "selected_overlay_icon_id": null,
+            "unselected_overlay_icon_id": null
+          },
+          "location": {
+            "latitude": 45.787137,
+            "longitude": 24.171978
+          },
+          "secondary_id": "BE966BF563E291D46E3D74E081337068",
+          "provider": "Lime"
+        },
+        {
+          "id": "ET-3IKO2ZMHETKBTXLIF4I34TWGRNJ43L7GM4AZS3Y",
+          "type": "scooter",
+          "pin": {
+            "selected_icon_id": 345,
+            "unselected_icon_id": 346,
+            "selected_overlay_icon_id": null,
+            "unselected_overlay_icon_id": null
+          },
+          "location": {
+            "latitude": 45.787446,
+            "longitude": 24.174656
+          },
+          "secondary_id": "4C75679CE861E7E8BFDD2F7410F6069D",
+          "provider": "Lime"
+        },
+        {
+          "id": "ET-4CTAOY3VC7FXHBV5H4VQTJRGNEBGUDSBTAGTIZI",
+          "type": "scooter",
+          "pin": {
+            "selected_icon_id": 343,
+            "unselected_icon_id": 344,
+            "selected_overlay_icon_id": null,
+            "unselected_overlay_icon_id": null
+          },
+          "location": {
+            "latitude": 45.787801,
+            "longitude": 24.176159
+          },
+          "secondary_id": "CD4D4D14CB151017DB8057CA6FFAC470",
+          "provider": "Lime"
+        },
+        {
+          "id": "ET-ROSZIIBL57V6PT7A6SSGVZG2WI42TC7Q43VRIDQ",
+          "type": "scooter",
+          "pin": {
+            "selected_icon_id": 347,
+            "unselected_icon_id": 348,
+            "selected_overlay_icon_id": null,
+            "unselected_overlay_icon_id": null
+          },
+          "location": {
+            "latitude": 45.785729,
+            "longitude": 24.174241
+          },
+          "secondary_id": "4DB4F9CED0E340D57B736A30FE03E782",
+          "provider": "Lime"
+        },
+        {
+          "id": "ET-Y5SUOMKQPU37P3ZHAPIZPJRAM3P24A46WGIZT7Y",
+          "type": "scooter",
+          "pin": {
+            "selected_icon_id": 347,
+            "unselected_icon_id": 348,
+            "selected_overlay_icon_id": null,
+            "unselected_overlay_icon_id": null
+          },
+          "location": {
+            "latitude": 45.774729,
+            "longitude": 24.151892
+          },
+          "secondary_id": "9D475193D83B0B0BC32E53FE89DD1854",
+          "provider": "Lime"
+        },
+        {
+          "id": "ET-7OLZ6VIIFMX2645CYHGJL45ZB54X5G5H67YNK6Q",
+          "type": "scooter",
+          "pin": {
+            "selected_icon_id": 345,
+            "unselected_icon_id": 346,
+            "selected_overlay_icon_id": null,
+            "unselected_overlay_icon_id": null
+          },
+          "location": {
+            "latitude": 45.774924,
+            "longitude": 24.161652
+          },
+          "secondary_id": "D0966018E365D12A624EDC7F7E0EC37C",
+          "provider": "Lime"
+        },
+        {
+          "id": "ET-2MCLG6KUICE3DIE4UF5SWCH2HPNPJA4W6FUP4SY",
+          "type": "scooter",
+          "pin": {
+            "selected_icon_id": 345,
+            "unselected_icon_id": 346,
+            "selected_overlay_icon_id": null,
+            "unselected_overlay_icon_id": null
+          },
+          "location": {
+            "latitude": 45.775206,
+            "longitude": 24.161385
+          },
+          "secondary_id": "542F16381ADAB7B9593626EE1E3DE639",
+          "provider": "Lime"
+        },
+        {
+          "id": "ET-5MACBA6M4EIIJL24OQHN53PAGSZVRZQHL553Q2Q",
+          "type": "scooter",
+          "pin": {
+            "selected_icon_id": 347,
+            "unselected_icon_id": 348,
+            "selected_overlay_icon_id": null,
+            "unselected_overlay_icon_id": null
+          },
+          "location": {
+            "latitude": 45.775222,
+            "longitude": 24.161355
+          },
+          "secondary_id": "D77AC049C23A1BAA9656D3DF8A3F0351",
+          "provider": "Lime"
+        }
+      ],
+      "selected_bike_pin": null,
+      "parking_spots": null,
+      "icons": [
+        {
+          "id": "37",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/preferred_parking_pin.png?fingerprint=858c49084787220d8ce831464e963380",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "38",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/cluster_5.png?fingerprint=63a0fcf08190758705158e1a31f405c9",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "39",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/cluster_10.png?fingerprint=c85d1c13655fea734199ffed8e885613",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "40",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/cluster_25.png?fingerprint=288364d2e540a638b7644091c84dc09c",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "41",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/cluster_100.png?fingerprint=0420cdb175d5e202438629ff786f449f",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "42",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/parking_dot.png?fingerprint=1366d1ed9ae4eee9cb126a05e089e801",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "51",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/preferred_parking_pin_new.png?fingerprint=fa886bcfc127b3928fbd58edfdbd71c2",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "70",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/png/ic_electric_40@3x.png?fingerprint=e15820a988ffddcc5deaf2c92a401b79",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "71",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/png/ic_scooter_40@3x.png?fingerprint=5b84bcd9a9e587c72f67cfdb09a16f5c",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "338",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/png/ic_city_level_pin_40@3x.png?fingerprint=dcbcdea84477ee2e96969a2d1e21f4ca",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "339",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeScooter_5_active.png?fingerprint=9cbd2693ad59575790b0ab28a1fa112c",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "340",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeScooter_5_inactive.png?fingerprint=1d29c32dccdc092163e50db94b83b58a",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "341",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeScooter_10_active.png?fingerprint=1f6f7c754c3d3a549bface64828ed89d",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "342",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeScooter_10_inactive.png?fingerprint=9de3cd2ae601a196429d23df5aea2d25",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "343",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeScooter_20_active.png?fingerprint=8866e719b53ab9fd714a0486ae20721f",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "344",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeScooter_20_inactive.png?fingerprint=8e27de1ea7cf997bfc394be002073885",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "345",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeScooter_30_active.png?fingerprint=61f4caf260dd41957c51072d2cd0eac3",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "346",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeScooter_30_inactive.png?fingerprint=191744dac46a5051e32d2dce2a84eacf",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "347",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeScooter_40_active.png?fingerprint=aa7e009813b10cfc982529f599da300f",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "348",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeScooter_40_inactive.png?fingerprint=fc4e9180805feabcb8209a38ebbf6e17",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "349",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeScooter_50_active.png?fingerprint=56a2c7d5735e8106f746b48941b96123",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "350",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeScooter_50_inactive.png?fingerprint=3d7a753954c477b36beab73826ec25eb",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "351",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeScooter_60_active.png?fingerprint=4bdd315a54f681db4b0bc375ef2c4bdb",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "352",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeScooter_60_inactive.png?fingerprint=702811e9002b07694f9c220e9926201a",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "353",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeScooter_70_active.png?fingerprint=e92dbeb412c491dc3a5eb45ae162e58d",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "354",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeScooter_70_inactive.png?fingerprint=1accea98ce50e6f366c7ed6d47c3c290",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "355",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeScooter_80_active.png?fingerprint=91bf2f27f3975914484348655da6abaa",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "356",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeScooter_80_inactive.png?fingerprint=e84a598b23bbde1bbb4678d171684b60",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "357",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeScooter_90_active.png?fingerprint=5eec32cdb281045d6d9c96f0cbb6f7c0",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "358",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeScooter_90_inactive.png?fingerprint=031aa4dc8f7d220e87e6fb456e8b8b42",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "359",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeScooter_100_active.png?fingerprint=01d9a8238d3e65c17469e26014f60139",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "360",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeScooter_100_inactive.png?fingerprint=0a97990f3367d0366db367b56eebf6b3",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "361",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeBike_5_active.png?fingerprint=c238f36dd008f5b02ee7f7f298a5ba20",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "362",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeBike_5_inactive.png?fingerprint=25baa40ac6c9e19df766ae2118e74bd2",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "363",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeBike_10_active.png?fingerprint=15e38318952bea82ef7722be5a0365f3",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "364",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeBike_10_inactive.png?fingerprint=5ef24cbb077aa92d0e26254cce005370",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "365",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeBike_20_active.png?fingerprint=690610ccde1e6418d179ebf4790cef35",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "366",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeBike_20_inactive.png?fingerprint=08c4f60c51cea1e3bfd1979acefa9f39",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "367",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeBike_30_active.png?fingerprint=3527f31b840290a2931d31bad7e296a9",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "368",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeBike_30_inactive.png?fingerprint=edd0c08567251e767c84e6e36a065072",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "369",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeBike_40_active.png?fingerprint=706404f29fea5d38f68116787471eb6d",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "370",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeBike_40_inactive.png?fingerprint=de1193c52647459fca5784b8d5f034cd",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "371",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeBike_50_active.png?fingerprint=7b003c8739353c78d77d0569376ff131",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "372",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeBike_50_inactive.png?fingerprint=712b7ac68de56da52874c407e67110a9",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "373",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeBike_60_active.png?fingerprint=ad363034b3184ad947e6f6c7a91f219a",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "374",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeBike_60_inactive.png?fingerprint=06dc63142240d0bf2f8cc88be863bb92",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "375",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeBike_70_active.png?fingerprint=481ea1abe6f734623bcef130a91f2fd5",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "376",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeBike_70_inactive.png?fingerprint=27d500f1f142d8c42624953c75e7ca83",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "377",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeBike_80_active.png?fingerprint=394ed0a862ceedfbf91cae95b2d84ca5",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "378",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeBike_80_inactive.png?fingerprint=8eff4019d3f794a5c6ac6a11070e72d0",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "379",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeBike_90_active.png?fingerprint=5d3bf883a764f89fa2f82f3a4acd2333",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "380",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeBike_90_inactive.png?fingerprint=98ce64c75f76b86b0181de77df4ecad3",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "381",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeBike_100_active.png?fingerprint=800894af5f24a72b2850a05550ec1e3d",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "382",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeBike_100_inactive.png?fingerprint=817b4500562ef503f33dfead00381cbf",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "394",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeMoped_5_active.png?fingerprint=50f1961f4a7728aecb45efef6d7ad3b6",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "395",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeMoped_5_inactive.png?fingerprint=6171b1fe4e87c463f41d2ef5907c6f2c",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "396",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeMoped_10_active.png?fingerprint=8062a7bf78d4e683611cbc020b651bfa",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "397",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeMoped_10_inactive.png?fingerprint=63294fd2b2ec7be565eb02f4e8691d77",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "398",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeMoped_20_active.png?fingerprint=670a39f92e787481049e3ecebf5adb3d",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "399",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeMoped_20_inactive.png?fingerprint=0e79d29b12dc30966fa96bf89a19aad6",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "400",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeMoped_30_active.png?fingerprint=f6e9bee06c0b13079a78f85c4c62a138",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "401",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeMoped_30_inactive.png?fingerprint=3afd4a6a5f2c8ba857b8ca9beb6e4344",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "402",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeMoped_40_active.png?fingerprint=136c88d3830c66d890a6c6cd2ee80002",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "403",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeMoped_40_inactive.png?fingerprint=e31612bbd20fcb9f903823018a66b728",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "404",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeMoped_50_active.png?fingerprint=bbd8ff7c5ea8cf82e353bde971423cf9",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "405",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeMoped_50_inactive.png?fingerprint=fa4aad00ba9ae6147735c08c1fd3bf76",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "406",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeMoped_60_active.png?fingerprint=694662c087046d36a99b3ddcdf498715",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "407",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeMoped_60_inactive.png?fingerprint=339f7ea861892878996933ec758634bc",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "408",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeMoped_70_active.png?fingerprint=0da9f0386d33a0ae8e4701c863c79b08",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "409",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeMoped_70_inactive.png?fingerprint=c5abf508d332515de9f7736b429da989",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "410",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeMoped_80_active.png?fingerprint=9bfd6a81da58526266bbef262ca8b227",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "411",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeMoped_80_inactive.png?fingerprint=1e400e45a7b693612f3d9c1699b22143",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "412",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeMoped_90_active.png?fingerprint=cf16acd930535934b7d113795e1c2390",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "413",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeMoped_90_inactive.png?fingerprint=3c6710409f271443dd5d3d699adba033",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "414",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeMoped_100_active.png?fingerprint=6c55068ccae600faf3218c7638c0f89d",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "415",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeMoped_100_inactive.png?fingerprint=b1f29a4093255df2cd56008d3dc04019",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "419",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeScooter_5_active.png?fingerprint=487eca576825230b99abaeb1d34fdef2",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "420",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeScooter_5_inactive.png?fingerprint=50e1e0d180e5118a2e7be3429f2461cf",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "421",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeScooter_10_active.png?fingerprint=21d2516e4e081cec70402032020af4c2",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "422",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeScooter_10_inactive.png?fingerprint=6e1f8a367dbee31963184c19c155c64d",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "423",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeScooter_20_active.png?fingerprint=5be2d8f2f659700f120a92379cf56885",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "424",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeScooter_20_inactive.png?fingerprint=cb9de26ab55fb9fbc052b8cf3e53bd2a",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "425",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeScooter_30_active.png?fingerprint=46a7bef324f9d047a648afa790d22dd8",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "426",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeScooter_30_inactive.png?fingerprint=0ccdcf726a64bf78c56998da0a7d42f8",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "427",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeScooter_40_active.png?fingerprint=18e60855eef4729be539d7342adeca3c",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "428",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeScooter_40_inactive.png?fingerprint=b74ca2d42642d2066811e9ddd402ccb1",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "429",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeScooter_50_active.png?fingerprint=789b014ded03646f554205f7cf92547c",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "430",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeScooter_50_inactive.png?fingerprint=2e6f5db31c0c96ab0b25d68aec32da1a",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "431",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeScooter_60_active.png?fingerprint=a76e774df1a141a53d306d4195d1638d",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "432",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeScooter_60_inactive.png?fingerprint=4cbc80c5459cfd6ad6ad70721ac3e1d8",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "433",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeScooter_70_active.png?fingerprint=8587f8edacc74a18e2d0c9be0570e424",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "434",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeScooter_70_inactive.png?fingerprint=83b9a26649a4225e0a7abba30caa2fa0",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "435",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeScooter_80_active.png?fingerprint=5be5aca484b1189eef0be91812d05c3e",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "436",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeScooter_80_inactive.png?fingerprint=aba9007678b0ab6487c86b209f1c0a61",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "437",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeScooter_90_active.png?fingerprint=514371362a6a7735ac8581a75e060152",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "438",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeScooter_90_inactive.png?fingerprint=02f758b158d5227321c30dd20edda5bc",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "439",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeScooter_100_active.png?fingerprint=2099cfcee4c93f3eb6d8eb71f90b0041",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "440",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeScooter_100_inactive.png?fingerprint=724e5cdc645ac108781cfeb891d6ad2a",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "463",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeBike_5_active.png?fingerprint=1559999ab016784cef023facdb7e1c90",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "464",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_WheelsBike_5_active.png?fingerprint=ce802276a669c6f2d4caa9fa0b8ee945",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "465",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeBike_5_inactive.png?fingerprint=10287db1df588b3f4367fede69d38cd0",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "466",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_WheelsBike_5_inactive.png?fingerprint=f50f19f8d263bea451943e321812e75b",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "467",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeBike_10_active.png?fingerprint=79d188cc4366d03a3a34785661498bb3",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "468",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_WheelsBike_10_active.png?fingerprint=7a61b4fe699d106ca6848fd7e0073254",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "469",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeBike_10_inactive.png?fingerprint=41fb2bdc9ae8863475cacc48ce5c463a",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "470",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_WheelsBike_10_inactive.png?fingerprint=95e773b296703332799c75ca0aa7bb06",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "471",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeBike_20_active.png?fingerprint=875323efa0ab793753115c18e17eddb0",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "472",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_WheelsBike_20_active.png?fingerprint=4fb1204f78303c6036ad86ad51a79351",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "473",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeBike_20_inactive.png?fingerprint=250701a435ffb24e32bb6bce17486818",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "474",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_WheelsBike_20_inactive.png?fingerprint=dcf4b6e83919f79e8afbe98f22590bc7",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "475",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeBike_30_active.png?fingerprint=9f9ed2f33d6037eff46e37ccd1bfa158",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "476",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_WheelsBike_30_active.png?fingerprint=63bd5999dbc4c735d3d091f15650718d",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "477",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeBike_30_inactive.png?fingerprint=6dc729a6f89209f26d90a238adae31cb",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "478",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_WheelsBike_30_inactive.png?fingerprint=339c8deeab38c9556b4bcdf2d9bf92c0",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "479",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeBike_40_active.png?fingerprint=fd1ac719ce4106b1efcbe547e1b1ec0a",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "480",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_WheelsBike_40_active.png?fingerprint=ff9914afb81a19f4e495a3a8a4bbde81",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "481",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeBike_40_inactive.png?fingerprint=66076825fab780b3307ab46bcbb9830f",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "482",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_WheelsBike_40_inactive.png?fingerprint=1854a74cdd94b3ca779c99b6ebd885d6",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "483",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeBike_50_active.png?fingerprint=9bcafe2fa2f2fb1ef232e950f9284cd5",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "484",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_WheelsBike_50_active.png?fingerprint=37785d672921f416a3a17173fb4e5cdc",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "485",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeBike_50_inactive.png?fingerprint=dfccce03a8e00ef6ddef647e4a28d07a",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "486",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_WheelsBike_50_inactive.png?fingerprint=41376c30e224d9a6034a6c682a32fd9e",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "487",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeBike_60_active.png?fingerprint=a9b122a7b2196780e77f4c981d56d1ab",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "488",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_WheelsBike_60_active.png?fingerprint=edf1e4930d7e4910880d29700d839d38",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "489",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeBike_60_inactive.png?fingerprint=0e44ff8249432979ac6e65dcd5569e69",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "490",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_WheelsBike_60_inactive.png?fingerprint=b8191001ba8e49547567e4ec23cf1bd3",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "491",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeBike_70_active.png?fingerprint=a9ff30624154e850903ed75352b3c44e",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "492",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_WheelsBike_70_active.png?fingerprint=5ad3952ec1936208211267a316bb39d2",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "493",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeBike_70_inactive.png?fingerprint=6a2109f97cd65548c8e7560222ff5f35",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "494",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_WheelsBike_70_inactive.png?fingerprint=51a978a77cd1339ed2617c271c7eb013",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "495",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeBike_80_active.png?fingerprint=768d54b96c6be841c81d68e18a9a80fe",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "496",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_WheelsBike_80_active.png?fingerprint=a69a88c6fb568e6f088edc6f38e3e5e1",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "497",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeBike_80_inactive.png?fingerprint=e5cb5eff0617a5655055a9748235285b",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "498",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_WheelsBike_80_inactive.png?fingerprint=296d5907eb635481cf28d724c79ae2c4",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "499",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeBike_90_active.png?fingerprint=c6825effdf556dcca94fda0ad16a47a8",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "500",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_WheelsBike_90_active.png?fingerprint=6a2f8db6671e7909a604964a02a858db",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "501",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeBike_90_inactive.png?fingerprint=09a644212e65d2aba8c3bb134595531a",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "502",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_WheelsBike_90_inactive.png?fingerprint=7032e482b153ad01566dc3e2253adb9c",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "503",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeBike_100_active.png?fingerprint=8f54b91f816d284bfb1ba8472d80d74e",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "504",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_WheelsBike_100_active.png?fingerprint=edaac8d1720d032de87633b2581afff7",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "505",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeBike_100_inactive.png?fingerprint=14689e69d7257f9a065b0222d4863adc",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "506",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_WheelsBike_100_inactive.png?fingerprint=54bfac16b872a075238953cb3b5751a2",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "507",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeMoped_5_active.png?fingerprint=0d17aa094ec7c8db1f1f2daea1d99a6b",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "509",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeMoped_5_inactive.png?fingerprint=1c4a4864d6e2afc47a4485a1d2f3b45b",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "511",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeMoped_10_active.png?fingerprint=7565144d41e247f1cf8cd87343ea3769",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "513",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeMoped_10_inactive.png?fingerprint=5ab981b13c2b5e163ea227fcef2231e5",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "515",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeMoped_20_active.png?fingerprint=a64fc68611018a5669e27d8825a41783",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "517",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeMoped_20_inactive.png?fingerprint=6de2c75d0afe2bcbc1f4d682d5d15ed5",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "519",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeMoped_30_active.png?fingerprint=d38fdd7140dede795faaeef42a422497",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "521",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeMoped_30_inactive.png?fingerprint=44e1642ef94d500b4dc88f6ac3409e7d",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "523",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeMoped_40_active.png?fingerprint=bbcc5d92c4ab8e0340552cf53a1dd03e",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "525",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeMoped_40_inactive.png?fingerprint=64af6ab023c2ffd2915116a7fc8c5c7a",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "527",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeMoped_50_active.png?fingerprint=6e8052af7bba55076306e29b83d19f9e",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "529",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeMoped_50_inactive.png?fingerprint=dce5dfb20fdfd6f0e173bd090d3a5e99",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "531",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeMoped_60_active.png?fingerprint=32b147278b7ace3a0a7707f2a914d897",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "533",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeMoped_60_inactive.png?fingerprint=d22978b5b69fded6167845f7479add09",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "535",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeMoped_70_active.png?fingerprint=39e7a500f76e467ff270b285193d0213",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "537",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeMoped_70_inactive.png?fingerprint=4ae19378cb3c583a28e136705d503399",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "539",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeMoped_80_active.png?fingerprint=46659be8c5e157bd2928be1ad470219f",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "541",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeMoped_80_inactive.png?fingerprint=72c34d0cc9e2467f7f916821aee18829",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "543",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeMoped_90_active.png?fingerprint=2fd2dfc1950d6ad104b8f05df86c1bc2",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "545",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeMoped_90_inactive.png?fingerprint=1f9de0509f789b34308ffbe9e8c4fb54",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "547",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeMoped_100_active.png?fingerprint=af7cf6a4b6ffaa9ef8fca747522e6d02",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "549",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/map_pins/pin_LimeMoped_100_inactive.png?fingerprint=fce408d3f0df38e40b698f6a09416cd4",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "896",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/vehicle_overlay_icons/pin_participant_overlay_1_active.png?fingerprint=639a0ca289f804bc5c2fcdecaed097ab",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "897",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/vehicle_overlay_icons/pin_participant_overlay_1_inactive.png?fingerprint=b634ac67a06d2b02ea5addeb8457800f",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "898",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/vehicle_overlay_icons/pin_participant_overlay_2_active.png?fingerprint=1f4840f33ec48308d7fb8aab28bfb95f",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "899",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/vehicle_overlay_icons/pin_participant_overlay_2_inactive.png?fingerprint=07cfca3def702a63afadaedf5262675f",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "900",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/vehicle_overlay_icons/pin_participant_overlay_3_active.png?fingerprint=ce30dc7ea065d6d61f88a19cc5797df2",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "901",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/vehicle_overlay_icons/pin_participant_overlay_3_inactive.png?fingerprint=12519d1f5362318f63ae5d01ae0d1702",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "902",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/vehicle_overlay_icons/pin_participant_overlay_4_active.png?fingerprint=a2573b2456bb3843f35059faeb01b495",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "903",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/vehicle_overlay_icons/pin_participant_overlay_4_inactive.png?fingerprint=2d9ba132b7ab3cd5c982c3615943267e",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "904",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/vehicle_overlay_icons/pin_participant_overlay_5_active.png?fingerprint=9bc2427b7d56c07bfd36d76bd2383650",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "905",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/vehicle_overlay_icons/pin_participant_overlay_5_inactive.png?fingerprint=2378dcd25be4515e8389dbaebda3d3c7",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "915",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/vehicle_overlay_icons/pin_participant_overlay_1_active.png?fingerprint=8338bfd74f5ed776e2462f555ae0581e",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "916",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/vehicle_overlay_icons/pin_participant_overlay_1_inactive.png?fingerprint=3ac1fdc6d4ce110786f0703ebe72c64f",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "917",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/vehicle_overlay_icons/pin_participant_overlay_2_active.png?fingerprint=78b42f0bd9f1fdbaef907d2c2f6151f4",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "918",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/vehicle_overlay_icons/pin_participant_overlay_2_inactive.png?fingerprint=bb1eb7f7ce8efe9e408b571080d23384",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "919",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/vehicle_overlay_icons/pin_participant_overlay_3_active.png?fingerprint=f15e29bc7da7fbe4e4cc0af3b6914d51",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "920",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/vehicle_overlay_icons/pin_participant_overlay_3_inactive.png?fingerprint=dbb9a4f2403782e1c57dee98da4a0c34",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "921",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/vehicle_overlay_icons/pin_participant_overlay_4_active.png?fingerprint=e46d6ac6974e98bea902168ea6351bf0",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "922",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/vehicle_overlay_icons/pin_participant_overlay_4_inactive.png?fingerprint=c0831458872b36cac4ca17bc2a27f02b",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "923",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/vehicle_overlay_icons/pin_participant_overlay_5_active.png?fingerprint=9ee277e5275eee4523be44dc86bc2b19",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "924",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/vehicle_overlay_icons/pin_participant_overlay_5_inactive.png?fingerprint=f26a3e90f1e98517e69905b9e9c6a926",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "925",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/vehicle_overlay_icons/low_battery_overlay_active.png?fingerprint=9c656d87900fd3c728b07d0fd530d601",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "926",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/vehicle_overlay_icons/low_battery_overlay_inactive.png?fingerprint=f731240243a5d88d474e238c38434b24",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "933",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/vehicle_overlay_icons/pretrip_incentive_overlay_active.png?fingerprint=85c863a7690f50151cc681fdbe0443fb",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "936",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/vehicle_overlay_icons/pin_badge_helmet_active.png?fingerprint=ad4779b3cf009755759c49edfe533861",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        },
+        {
+          "id": "937",
+          "type": "icons",
+          "attributes": {
+            "url": "https://assets.lime.bike/icons/simplify_unlock/vehicle_overlay_icons/pin_badge_helmet_inactive.png?fingerprint=b79934d3ab18747f015c3293ed371812",
+            "description_icon_url": null,
+            "description_link_url": null,
+            "description": ""
+          }
+        }
+      ],
+      "current_level": "block",
+      "levels": {
+        "region": 7.0,
+        "subregion": 11.0,
+        "city": 14.0
+      },
+      "most_recent_trip": null,
+      "banner": null,
+      "donation_organization": null,
+      "parking_spots_radius_meters": 20,
+      "map_pins": [],
+      "group_ride_id": null,
+      "group_ride_participants": null,
+      "current_trip_pin": null
+    }
+  },
+  "meta": {
+    "latest_user_agreement_version": "4",
+    "min_ios_version": "2.11.0",
+    "min_android_code": 93,
+    "flags": "IOS_VERSION_V1.0,ANDROID_VERSION_V1.0",
+    "groups": {
+      "default_to_unlock_group": "control",
+      "group_ride": false,
+      "enable_rider_scanner_v2": true,
+      "area_rate_plan_on_scanner": true,
+      "backend_driven_trip_rating": true,
+      "bike_reservation": true,
+      "enable_promo_notification_optout": true,
+      "filter_zones_based_on_vehicle_type": false,
+      "show_auto_reload": true,
+      "map_levels_v1": true,
+      "group_ride_revamp": true,
+      "unlock_button_group": "white_bar",
+      "braze_integration": true,
+      "take_photo": "find_my_ride",
+      "show_battery_level_on_map": true,
+      "unlock_confirmation": false,
+      "short_stop": true,
+      "bluetooth_unlock": false,
+      "parked_or_not": false,
+      "branch_link_referral": true,
+      "persist_rate_ride": true,
+      "no_header_map": true,
+      "long_pause_group": false,
+      "group_ride_v2": false,
+      "group_ride_max_rider_cap": "5",
+      "group_ride_max_guest_cap": "10",
+      "group_ride_revamp_two_point_one": true,
+      "enable_in_trip_switch": false,
+      "id_scanner": "google_vision",
+      "enable_stripe_sca_flow": true,
+      "id_scan_show_manual_delay_sec": 15,
+      "cvv_optional": false,
+      "auto_reload_on_by_default": true,
+      "new_method_completing_trip": true,
+      "auto_reload_experience_updates": true,
+      "auto_reload_always_enabled": false,
+      "remove_add_balance_confirmation": false,
+      "scooter_reservation": true,
+      "show_group_ride_tutorial": true,
+      "show_lime_prime_aesthetics": false,
+      "use_client_groups": false,
+      "use_moshi": true,
+      "fetch_end_trip_experience": true,
+      "android_how_to_ride_tutorial": true,
+      "android_trip_events_refactor": true,
+      "cancel_reserve_red_button": true,
+      "timeout_retry": false,
+      "show_loyalty_spend_points": false,
+      "show_loyalty": true,
+      "zone_messaging_enabled": true,
+      "show_self_help": true,
+      "map_style_with_poi": false,
+      "ride_history_with_pagination": true,
+      "customized_speed_cap_enabled": false,
+      "comfort_ride_enabled": false,
+      "server_side_id_verification": true,
+      "recommend_nearby_bike_v2": true,
+      "top_banner_carousel": false,
+      "request_bluetooth_permission_at_unlock_screen": false,
+      "use_tutorial_v2": true,
+      "use_banner_v2": true,
+      "use_new_microblink": true,
+      "group_ride_reserve": true,
+      "map_improvements": {
+        "battery_sort": true,
+        "cache_zones": true,
+        "clustering": true,
+        "fetch_zones": false,
+        "icons": true
+      },
+      "use_trip_summary_v2": true,
+      "use_app_refresh_theme": false,
+      "simplify_unlock_new_map_experience": true,
+      "zip_code_country_selector": true,
+      "complete_trip_before_take_photo": true,
+      "use_referrals_v2": false,
+      "verify_end_trip_photo_ar": false,
+      "verify_end_trip_photo_ml": false,
+      "rider_charging_network_battery_threshold": 100.0,
+      "verify_end_trip_ar": false,
+      "donation_group": "control",
+      "user_transaction_history": true,
+      "enable_unlocking_service_fixes": true,
+      "enable_group_ride_end_all": true,
+      "enable_end_trip_photo_backend_driven_view": true,
+      "elements_kakao_pay_enabled": false,
+      "enable_sentry_sdk": false,
+      "klarna_payment_method": false,
+      "paypal_payment_method": false,
+      "payment_zip_code": true,
+      "payments": {
+        "cvv_optional": false,
+        "payment_card_io_scan": false,
+        "payment_creation_ui": true,
+        "payment_billing_address": false,
+        "payment_cardholder_name": false,
+        "payment_zip_code": true
+      },
+      "apple_pay": true,
+      "map_balance_icon": false,
+      "payment_billing_address": false,
+      "payment_creation_ui": true,
+      "payment_cardholder_name": false,
+      "apple_pay_address_ui": true,
+      "card_scanner": "use_dyneti_scanner",
+      "enable_google_pay": true,
+      "enable_new_payment_blocker": true,
+      "android_juicer_multi_task_v1": true,
+      "android_upload_juicer_attributes": true,
+      "enable_juicer_endpoint_v2": true,
+      "android_enable_backend_driven_cancel_task": true,
+      "android_tooltip_v2": true,
+      "android_enable_bulk_scan_of_deploy_tasks": true,
+      "ios_juicer_task_bundle": null,
+      "android_juicer_task_bundle": null,
+      "enable_juicer_vat_profile": null,
+      "enable_juicer_backend_banner": false,
+      "enable_juicer_in_app_funnel": false,
+      "enable_juicer_in_app_funnel_nearby_region": true,
+      "use_backend_driven_earn_with_lime_button": true,
+      "use_backend_driven_switch_to_juicer_mode_button": true,
+      "use_juicer_scanner_v2": null,
+      "enable_new_juicer_dropoff_scanner": null,
+      "juicer_tax_form_to_show": "none",
+      "juicer_earnings_notification": false,
+      "juicer_satellite_mode": false,
+      "juicer_level_2": true,
+      "ios_juicer_rebalance_v1": false,
+      "android_juicer_rebalance_v1": false,
+      "enable_juicer_mock_gps_blocker": true,
+      "enable_juicer_settings": true,
+      "enable_juicer_in_app_message": true,
+      "ios_juicer_multi_task_v1": true,
+      "edit_email_magic_link": false
+    },
+    "trip_id": null,
+    "trip_status": null,
+    "group_id": null,
+    "group_ride_status": null,
+    "group_ride_version": "group_ride_revamp",
+    "notifications": [],
+    "messages": [],
+    "country_code": "US",
+    "user_agreement_version": 4,
+    "user_agreement_country_code": "US",
+    "need_to_show_agreement": false,
+    "user_agreement_url": "https://li.me/legal",
+    "user_agreement_title": "We've Updated Our User Agreement and Privacy Notice",
+    "user_agreement_message": "By clicking \"I agree,\" you confirm that you have read, understood and agree to Lime’s updated User Agreement and acknowledge Lime’s updated Privacy Notice.",
+    "user_agreement_primary_button": "I agree",
+    "user_agreement_view_terms_button": "View User Agreement & Privacy Notice",
+    "need_to_show_group_ride_agreement": true
+  }
+}
