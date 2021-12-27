@@ -30,7 +30,7 @@ class LemonConfig(configparser.SafeConfigParser):
     def get_default_config(cls):
         default_config = cls()
         default_config["DEFAULT"] = {
-            "auth_file": "~/.lemon_map.auth",
+            "auth_file": "~/.lemon_auth.json",
         }
         return default_config
 

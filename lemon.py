@@ -25,7 +25,6 @@ def setup_auth():
     auth = lemon_map.LemonAuth()
     try:
         auth.request_otp_by_phone(phone_number=phone_no)
-
         otp = input("please input the received OTP: ")
         auth.provide_otp(otp)
         if auth.token:
@@ -36,6 +35,7 @@ def setup_auth():
 
 
 def run_main(args):
+    global config
     ret_val = 0
     config_to_load = (
         args.config_file if args.config_file else lemon_map.LemonConfig.DEFAULT_CONFIG_FILE

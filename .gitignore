@@ -1,8 +1,11 @@
 .idea/
 /http-client.private.env.json
+lemon_auth.json
 
 # for now don't track local config in repo
 *.ini
+# a helper containing personal data
+quick_auth.py
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
