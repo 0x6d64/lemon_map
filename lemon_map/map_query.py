@@ -76,6 +76,20 @@ class MapQuery:
         self._response_raw = json.loads(api_request.content)
 
 
+class MapViewParser():
+    def __init__(self):
+        self.vehicles = list()
+        pass
+
+    def parse_map_view(self, data):
+        pass
+
+    def parse_file(self, filename):
+        with open(filename) as fp:
+            data = json.load(fp)
+            self.parse_map_view(data)
+
+
 if __name__ == "__main__":
     import config
     import auth
@@ -85,6 +99,6 @@ if __name__ == "__main__":
     auth_file = os.path.join("..", lemon_config.get("DEFAULT", "auth_file"))
     my_auth = auth.LemonAuth().from_token_file(auth_file)
 
-    mq = MapQuery().from_config_instance(lemon_config)
-    mq.request_map_view(my_auth.token)
-    print(mq)
+    example_json = "../data_raw/example_response3.json"
+    parser = MapViewParser()
+    parser.parse_file(example_json)
