@@ -1,20 +1,89 @@
 # -*- coding: utf-8 -*-
+import json
+
+import requests
+import datetime
+from exceptions import LemonQueryException
+from api_helper import LIME_API_BASE_URL
 
 
 class MapQuery:
-    def __init__(self):
-        self.ne_lat=None
-        self.ne_lng=None
-        self.sw_lat=None
-        self.sw_lng=None
-        self.user_latitude=None
-        self.user_longitude=None
+    def __init__(self, query_parameters=None):
+        self.user_latitude = None
+        self.user_longitude = None
+        self.ne_lat = None
+        self.ne_lng = None
+        self.sw_lat = None
+        self.sw_lng = None
         self.zoom = None
         self._response_raw = None
         self._response_timestamp = None
+        if query_parameters:
+            if not isinstance(query_parameters, dict):
+                raise LemonQueryException("query_parameters must be a dict!")
+            self.initialize_from_dict(query_parameters)
 
-    def get_response(self, token):
-        pass
+    def initialize_from_dict(self, parameter_dict):
+        self.ne_lat = parameter_dict.get("ne_lat", self.ne_lat)
+        self.ne_lng = parameter_dict.get("ne_lng", self.ne_lng)
+        self.sw_lat = parameter_dict.get("sw_lat", self.sw_lat)
+        self.sw_lng = parameter_dict.get("sw_lng", self.sw_lng)
+        self.user_latitude = parameter_dict.get("user_latitude", self.user_latitude)
+        self.user_longitude = parameter_dict.get("user_longitude", self.user_longitude)
+        self.zoom = parameter_dict.get("zoom", self.zoom)
+
+    def represent_as_dict(self):
+        dict_representation = {
+            "user_latitude": self.user_latitude,
+            "user_longitude": self.user_latitude,
+            "ne_lat": self.ne_lat,
+            "ne_lng": self.ne_lng,
+            "sw_lat": self.sw_lat,
+            "sw_lng": self.sw_lng,
+            "zoom": self.zoom,
+        }
+        return dict_representation
+
+    @classmethod
+    def from_config_instance(cls, config_instance):
+        new_cls = cls()
+        parameters = {
+            "user_latitude": config_instance.get("MAP", "user_lat"),
+            "user_longitude": config_instance.get("MAP", "user_lon"),
+            "ne_lat": config_instance.get("MAP", "northlimit"),
+            "ne_lng": config_instance.get("MAP", "eastlimit"),
+            "sw_lat": config_instance.get("MAP", "southlimit"),
+            "sw_lng": config_instance.get("MAP", "westlimit"),
+            "zoom": config_instance.get("MAP", "zoom"),
+        }
+        new_cls.initialize_from_dict(parameters)
+        return new_cls
+
+    def get_vehicles(self, token):
+        api_request = requests.get(
+            LIME_API_BASE_URL + "/rider/v1/views/map",
+            data=self.represent_as_dict(),
+            headers={"authorization": "Bearer {}".format(token)},
+        )
+        if not api_request.ok:
+            raise LemonQueryException(
+                "error requesting vehicles: Response {}, {}".format(
+                    api_request.status_code, api_request.content
+                )
+            )
+        self._response_timestamp = datetime.datetime.now()
+        self._response_raw = json.loads(api_request.content)
+
 
 if __name__ == "__main__":
-    mq = MapQuery()
+    import config
+    import auth
+    import os
+
+    lemon_config = config.LemonConfig().from_file("../.lemon_config.ini")
+    auth_file = os.path.join("..", lemon_config.get("DEFAULT", "auth_file"))
+    my_auth = auth.LemonAuth().from_token_file(auth_file)
+
+    mq = MapQuery().from_config_instance(lemon_config)
+    mq.get_vehicles(my_auth.token)
+    print(mq)

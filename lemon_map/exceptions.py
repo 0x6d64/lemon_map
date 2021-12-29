@@ -7,3 +7,7 @@ class LemonException(Exception):
 
 class LemonAuthException(LemonException):
     pass
+
+
+class LemonQueryException(LemonException):
+    pass
