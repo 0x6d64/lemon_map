@@ -10,7 +10,7 @@ class Vehicle
 class Scooter
 class NonScooter
 
-note left: if we encounter non scooters we put the vehicles here
+note right: if we encounter \n non scooters we put\n the vehicles here
 
 class VehicleStats
 
