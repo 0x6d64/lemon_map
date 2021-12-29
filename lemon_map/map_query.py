@@ -5,6 +5,7 @@ import requests
 import datetime
 from exceptions import LemonQueryException
 from api_helper import LIME_API_BASE_URL
+from vehicles import Scooter, NonScooter
 
 
 class MapQuery:
@@ -59,7 +60,7 @@ class MapQuery:
         new_cls.initialize_from_dict(parameters)
         return new_cls
 
-    def get_vehicles(self, token):
+    def request_map_view(self, token):
         api_request = requests.get(
             LIME_API_BASE_URL + "/rider/v1/views/map",
             data=self.represent_as_dict(),
@@ -85,5 +86,5 @@ if __name__ == "__main__":
     my_auth = auth.LemonAuth().from_token_file(auth_file)
 
     mq = MapQuery().from_config_instance(lemon_config)
-    mq.get_vehicles(my_auth.token)
+    mq.request_map_view(my_auth.token)
     print(mq)
