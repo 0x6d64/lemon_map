@@ -32,6 +32,15 @@ class LemonConfig(configparser.SafeConfigParser):
         default_config["DEFAULT"] = {
             "auth_file": "~/.lemon_auth.json",
         }
+        default_config["MAP"] = {
+            "user_lat": "0.0",
+            "user_lon": "0.0",
+            "northlimit": "0.0",
+            "eastlimit": "0.0",
+            "southlimit": "0.0",
+            "westlimit": "0.0",
+            "zoom": "16",
+        }
         return default_config
 
     def save_to_file(self, filename=None):
