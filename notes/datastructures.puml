@@ -1,0 +1,24 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class MapQuery {
+    get_response()
+}
+class LemonMap
+
+class Vehicle
+class Scooter
+class NonScooter
+
+note right: if we encounter \n non scooters we put\n the vehicles here
+
+class VehicleStats
+
+Vehicle <|-- Scooter
+Vehicle <|-- NonScooter
+
+LemonMap o-- VehicleStats
+LemonMap o-- "many" Vehicle
+LemonMap o-- MapQuery
+
+@enduml

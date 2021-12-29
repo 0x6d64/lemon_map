@@ -5,11 +5,10 @@ import json
 import requests
 
 from lemon_map.exceptions import LemonAuthException
+from api_helper import LIME_API_BASE_URL
 
 
 class LemonAuth:
-    API_BASE_URL = "https://web-production.lime.bike/api"
-
     def __init__(self):
         self.token = None
         self.phone_number = None
@@ -35,7 +34,7 @@ class LemonAuth:
         if phone_number:
             self.phone_number = phone_number
         api_request = requests.get(
-            self.API_BASE_URL + "/rider/v1/login", data={"phone": self.phone_number}
+            LIME_API_BASE_URL + "/rider/v1/login", data={"phone": self.phone_number}
         )
         if not api_request.ok:
             raise LemonAuthException(
@@ -49,7 +48,7 @@ class LemonAuth:
             raise LemonAuthException("cannot provide OTP without phone number!")
 
         api_request = requests.post(
-            self.API_BASE_URL + "/rider/v1/login",
+            LIME_API_BASE_URL + "/rider/v1/login",
             json={"login_code": otp, "phone": self.phone_number},
         )
         if not api_request.ok:

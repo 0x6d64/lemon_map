@@ -1,5 +1,5 @@
 .idea/
-/http-client.private.env.json
+**/http-client.private.env.json
 lemon_auth.json
 
 # for now don't track local config in repo
