@@ -4,8 +4,8 @@ import json
 
 import requests
 
-from lemon_map.exceptions import LemonAuthException
 from api_helper import LIME_API_BASE_URL
+from lemon_map.exceptions import LemonAuthException
 
 
 class LemonAuth:

@@ -1,10 +1,13 @@
 # -*- coding: utf-8 -*-
+import datetime
 import json
 
+import geopy
+import geopy.distance
 import requests
-import datetime
-from exceptions import LemonQueryException
+
 from api_helper import LIME_API_BASE_URL
+from exceptions import LemonQueryException
 from vehicles import Scooter, NonScooter
 
 
@@ -76,20 +79,15 @@ class MapQuery:
         self._response_raw = json.loads(api_request.content)
 
 
-class MapViewParser():
-    def __init__(self):
-        self._vehicles = set()
-        pass
+class MapViewParser:
+    def __init__(self, user_lat=None, user_lon=None):
+        self.user_lat = user_lat
+        self.user_lon = user_lon
 
-    def parse_map_view(self, mapview_data):
-        """
-        TODO
-        quick outline on what to do:
-        iterate over data first pass, create instance of Scooter for each scooter found
-        then do a second pass where we complete the data from the second part of the dict
-        validate that we don't have a mismatch between first and second pass
-        the scooters need to have the ID assigned to each other
-        """
+    def parse_map_view(self, mapview_data, timestamp=None):
+        parsed_vehicles = set()
+        if not timestamp:
+            timestamp = datetime.datetime.now()
         attributes_to_extract = [
             "plate_number",
             "latitude",
@@ -105,15 +103,27 @@ class MapViewParser():
             for item in attributes_to_extract:
                 vehicle_data[item] = vehicle.get("attributes").get(item)
             if vehicle_data.get("type_name") == "scooter":
-                new_vehicle = Scooter(vehicle_data)
+                new_vehicle = Scooter(attribute_dict=vehicle_data, timestamp=timestamp)
             else:
-                new_vehicle = NonScooter(vehicle_data)
-            self._vehicles.add(new_vehicle)
+                new_vehicle = NonScooter(attribute_dict=vehicle_data, timestamp=timestamp)
+            parsed_vehicles.add(new_vehicle)
+        if self.user_lat and self.user_lon:
+            self._update_straightline_distances(parsed_vehicles)
+        return parsed_vehicles
 
     def parse_file(self, filename):
         with open(filename) as fp:
             data = json.load(fp)
-            self.parse_map_view(data)
+            timestamp = datetime.datetime.fromtimestamp(os.path.getmtime(filename))
+            parsed_data = self.parse_map_view(data, timestamp=timestamp)
+        return parsed_data
+
+    def _update_straightline_distances(self, vehicles):
+        user_location = geopy.point.Point(self.user_lat, self.user_lon)
+        for v in vehicles:
+            v_location = geopy.point.Point(v.latitude, v.longitude)
+            distance = geopy.distance.geodesic(user_location, v_location).meters
+            v.distance_straight = distance
 
 
 if __name__ == "__main__":
@@ -126,6 +136,9 @@ if __name__ == "__main__":
     my_auth = auth.LemonAuth().from_token_file(auth_file)
 
     example_json = "../data_raw/example_response3.json"
-    parser = MapViewParser()
-    parser.parse_file(example_json)
-    print(parser._vehicles)
+    parser = MapViewParser(user_lat=45.79919616985226, user_lon=24.155758121471834)
+    vehicles = parser.parse_file(example_json)
+    for x in sorted(vehicles, key=lambda x: x.distance_straight):
+        print(str(x))
+
+    print("done")
