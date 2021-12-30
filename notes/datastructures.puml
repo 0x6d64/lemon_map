@@ -2,11 +2,18 @@
 'https://plantuml.com/class-diagram
 
 class MapQuery {
-    get_response()
+    request_map_view()
+}
+class MapViewParser {
+    parse_map_view()
+    parse_file()
 }
 class LemonMap
 
-class Vehicle
+class Vehicle {
+    id
+    hash()
+}
 class Scooter
 class NonScooter
 

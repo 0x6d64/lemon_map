@@ -5,6 +5,7 @@ import requests
 import datetime
 from exceptions import LemonQueryException
 from api_helper import LIME_API_BASE_URL
+from vehicles import Scooter, NonScooter
 
 
 class MapQuery:
@@ -59,7 +60,7 @@ class MapQuery:
         new_cls.initialize_from_dict(parameters)
         return new_cls
 
-    def get_vehicles(self, token):
+    def request_map_view(self, token):
         api_request = requests.get(
             LIME_API_BASE_URL + "/rider/v1/views/map",
             data=self.represent_as_dict(),
@@ -75,6 +76,46 @@ class MapQuery:
         self._response_raw = json.loads(api_request.content)
 
 
+class MapViewParser():
+    def __init__(self):
+        self._vehicles = set()
+        pass
+
+    def parse_map_view(self, mapview_data):
+        """
+        TODO
+        quick outline on what to do:
+        iterate over data first pass, create instance of Scooter for each scooter found
+        then do a second pass where we complete the data from the second part of the dict
+        validate that we don't have a mismatch between first and second pass
+        the scooters need to have the ID assigned to each other
+        """
+        attributes_to_extract = [
+            "plate_number",
+            "latitude",
+            "longitude",
+            "battery_percentage",
+            "operating_status",
+            "type_name",
+        ]
+        data = mapview_data.get("data")
+        bikes_data = data.get("attributes").get("bikes")
+        for vehicle in bikes_data:
+            vehicle_data = {"id": vehicle.get("id")}
+            for item in attributes_to_extract:
+                vehicle_data[item] = vehicle.get("attributes").get(item)
+            if vehicle_data.get("type_name") == "scooter":
+                new_vehicle = Scooter(vehicle_data)
+            else:
+                new_vehicle = NonScooter(vehicle_data)
+            self._vehicles.add(new_vehicle)
+
+    def parse_file(self, filename):
+        with open(filename) as fp:
+            data = json.load(fp)
+            self.parse_map_view(data)
+
+
 if __name__ == "__main__":
     import config
     import auth
@@ -84,6 +125,7 @@ if __name__ == "__main__":
     auth_file = os.path.join("..", lemon_config.get("DEFAULT", "auth_file"))
     my_auth = auth.LemonAuth().from_token_file(auth_file)
 
-    mq = MapQuery().from_config_instance(lemon_config)
-    mq.get_vehicles(my_auth.token)
-    print(mq)
+    example_json = "../data_raw/example_response3.json"
+    parser = MapViewParser()
+    parser.parse_file(example_json)
+    print(parser._vehicles)
