@@ -2,8 +2,7 @@
 import datetime
 import json
 
-import geopy
-import geopy.distance
+import haversine
 import requests
 
 from api_helper import LIME_API_BASE_URL
@@ -119,10 +118,10 @@ class MapViewParser:
         return parsed_data
 
     def _update_straightline_distances(self, vehicles):
-        user_location = geopy.point.Point(self.user_lat, self.user_lon)
+        user_location = (self.user_lat, self.user_lon)
         for v in vehicles:
-            v_location = geopy.point.Point(v.latitude, v.longitude)
-            distance = geopy.distance.geodesic(user_location, v_location).meters
+            v_location = (v.latitude, v.longitude)
+            distance = haversine.haversine(user_location, v_location, unit=haversine.Unit.METERS)
             v.distance_straight = distance
 
 
