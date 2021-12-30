@@ -82,15 +82,9 @@ class MapViewParser:
         self._vehicles = set()
         pass
 
-    def parse_map_view(self, mapview_data):
-        """
-        TODO
-        quick outline on what to do:
-        iterate over data first pass, create instance of Scooter for each scooter found
-        then do a second pass where we complete the data from the second part of the dict
-        validate that we don't have a mismatch between first and second pass
-        the scooters need to have the ID assigned to each other
-        """
+    def parse_map_view(self, mapview_data, timestamp=None):
+        if not timestamp:
+            timestamp = datetime.datetime.now()
         attributes_to_extract = [
             "plate_number",
             "latitude",
@@ -106,15 +100,16 @@ class MapViewParser:
             for item in attributes_to_extract:
                 vehicle_data[item] = vehicle.get("attributes").get(item)
             if vehicle_data.get("type_name") == "scooter":
-                new_vehicle = Scooter(attribute_dict=vehicle_data)
+                new_vehicle = Scooter(attribute_dict=vehicle_data, timestamp=timestamp)
             else:
-                new_vehicle = NonScooter(attribute_dict=vehicle_data)
+                new_vehicle = NonScooter(attribute_dict=vehicle_data, timestamp=timestamp)
             self._vehicles.add(new_vehicle)
 
     def parse_file(self, filename):
         with open(filename) as fp:
             data = json.load(fp)
-            self.parse_map_view(data)
+            timestamp = datetime.datetime.fromtimestamp(os.path.getmtime(filename))
+            self.parse_map_view(data, timestamp=timestamp)
 
 
 if __name__ == "__main__":

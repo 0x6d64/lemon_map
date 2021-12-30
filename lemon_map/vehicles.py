@@ -3,8 +3,9 @@ import datetime
 
 
 class Vehicle:
-    def __init__(self, attribute_dict=None):
+    def __init__(self, attribute_dict=None, timestamp=None):
         self.id = None
+        self.timestamp = timestamp if timestamp else datetime.datetime.now()
         self._process_attribute_dict(attribute_dict)
 
     def _process_attribute_dict(self, attribute_dict):
