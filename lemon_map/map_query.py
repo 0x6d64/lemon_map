@@ -2,6 +2,8 @@
 import datetime
 import json
 
+import geopy
+import geopy.distance
 import requests
 
 from api_helper import LIME_API_BASE_URL
@@ -78,11 +80,12 @@ class MapQuery:
 
 
 class MapViewParser:
-    def __init__(self):
-        self._vehicles = set()
-        pass
+    def __init__(self, user_lat=None, user_lon=None):
+        self.user_lat = user_lat
+        self.user_lon = user_lon
 
     def parse_map_view(self, mapview_data, timestamp=None):
+        parsed_vehicles = set()
         if not timestamp:
             timestamp = datetime.datetime.now()
         attributes_to_extract = [
@@ -103,13 +106,24 @@ class MapViewParser:
                 new_vehicle = Scooter(attribute_dict=vehicle_data, timestamp=timestamp)
             else:
                 new_vehicle = NonScooter(attribute_dict=vehicle_data, timestamp=timestamp)
-            self._vehicles.add(new_vehicle)
+            parsed_vehicles.add(new_vehicle)
+        if self.user_lat and self.user_lon:
+            self._update_straightline_distances(parsed_vehicles)
+        return parsed_vehicles
 
     def parse_file(self, filename):
         with open(filename) as fp:
             data = json.load(fp)
             timestamp = datetime.datetime.fromtimestamp(os.path.getmtime(filename))
-            self.parse_map_view(data, timestamp=timestamp)
+            parsed_data = self.parse_map_view(data, timestamp=timestamp)
+        return parsed_data
+
+    def _update_straightline_distances(self, vehicles):
+        user_location = geopy.point.Point(self.user_lat, self.user_lon)
+        for v in vehicles:
+            v_location = geopy.point.Point(v.latitude, v.longitude)
+            distance = geopy.distance.geodesic(user_location, v_location).meters
+            v.distance_straight = distance
 
 
 if __name__ == "__main__":
@@ -122,7 +136,9 @@ if __name__ == "__main__":
     my_auth = auth.LemonAuth().from_token_file(auth_file)
 
     example_json = "../data_raw/example_response3.json"
-    parser = MapViewParser()
-    parser.parse_file(example_json)
-    vehicles = parser._vehicles
-    print(vehicles)
+    parser = MapViewParser(user_lat=45.79919616985226, user_lon=24.155758121471834)
+    vehicles = parser.parse_file(example_json)
+    for x in sorted(vehicles, key=lambda x: x.distance_straight):
+        print(str(x))
+
+    print("done")

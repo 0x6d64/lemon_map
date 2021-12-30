@@ -1,11 +1,14 @@
 # -*- coding: utf-8 -*-
 import datetime
 
+from helper import distance_human_readable
+
 
 class Vehicle:
     def __init__(self, attribute_dict=None, timestamp=None):
         self.id = None
         self.timestamp = timestamp if timestamp else datetime.datetime.now()
+        self.distance_straight = None
         self._process_attribute_dict(attribute_dict)
 
     def _process_attribute_dict(self, attribute_dict):
@@ -41,12 +44,13 @@ class Vehicle:
         return hash(self.id)
 
     def __str__(self):
-        str_representation = "{type}|{plate}@{soc}%|{lat}|{lon}".format(
+        str_representation = "{type}|{plate}@{soc}%|{lat}|{lon}|{distance}".format(
             type=self.type,
             plate=self.plate_number,
             soc=self.soc,
             lat=self.latitude,
             lon=self.longitude,
+            distance=distance_human_readable(self.distance_straight),
         )
         return str_representation
 
