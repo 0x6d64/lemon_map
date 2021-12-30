@@ -78,11 +78,37 @@ class MapQuery:
 
 class MapViewParser():
     def __init__(self):
-        self.vehicles = list()
+        self._vehicles = set()
         pass
 
-    def parse_map_view(self, data):
-        pass
+    def parse_map_view(self, mapview_data):
+        """
+        TODO
+        quick outline on what to do:
+        iterate over data first pass, create instance of Scooter for each scooter found
+        then do a second pass where we complete the data from the second part of the dict
+        validate that we don't have a mismatch between first and second pass
+        the scooters need to have the ID assigned to each other
+        """
+        attributes_to_extract = [
+            "plate_number",
+            "latitude",
+            "longitude",
+            "battery_percentage",
+            "operating_status",
+            "type_name",
+        ]
+        data = mapview_data.get("data")
+        bikes_data = data.get("attributes").get("bikes")
+        for vehicle in bikes_data:
+            vehicle_data = {"id": vehicle.get("id")}
+            for item in attributes_to_extract:
+                vehicle_data[item] = vehicle.get("attributes").get(item)
+            if vehicle_data.get("type_name") == "scooter":
+                new_vehicle = Scooter(vehicle_data)
+            else:
+                new_vehicle = NonScooter(vehicle_data)
+            self._vehicles.add(new_vehicle)
 
     def parse_file(self, filename):
         with open(filename) as fp:
@@ -102,3 +128,4 @@ if __name__ == "__main__":
     example_json = "../data_raw/example_response3.json"
     parser = MapViewParser()
     parser.parse_file(example_json)
+    print(parser._vehicles)
