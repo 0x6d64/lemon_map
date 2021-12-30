@@ -106,9 +106,9 @@ class MapViewParser:
             for item in attributes_to_extract:
                 vehicle_data[item] = vehicle.get("attributes").get(item)
             if vehicle_data.get("type_name") == "scooter":
-                new_vehicle = Scooter(vehicle_data)
+                new_vehicle = Scooter(attribute_dict=vehicle_data)
             else:
-                new_vehicle = NonScooter(vehicle_data)
+                new_vehicle = NonScooter(attribute_dict=vehicle_data)
             self._vehicles.add(new_vehicle)
 
     def parse_file(self, filename):
@@ -129,4 +129,5 @@ if __name__ == "__main__":
     example_json = "../data_raw/example_response3.json"
     parser = MapViewParser()
     parser.parse_file(example_json)
-    print(parser._vehicles)
+    vehicles = parser._vehicles
+    print(vehicles)
