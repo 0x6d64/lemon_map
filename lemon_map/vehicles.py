@@ -61,9 +61,3 @@ class Scooter(Vehicle):
 
 class NonScooter(Vehicle):
     pass
-
-
-class VehicleStats:
-    def __init__(self):
-        # TODO
-        pass

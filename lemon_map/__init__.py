@@ -4,4 +4,4 @@ from .config import LemonConfig
 from .datastructures import LemonMap
 from .exceptions import LemonException, LemonAuthException
 from .map_query import MapQuery
-from .vehicles import Vehicle, VehicleStats, Scooter, NonScooter
+from .vehicles import Vehicle, Scooter, NonScooter

@@ -20,8 +20,8 @@ class MapQuery:
         self.sw_lat = None
         self.sw_lng = None
         self.zoom = None
-        self._response_raw = None
-        self._response_timestamp = None
+        self.response_raw = None
+        self.timestamp = None
         if query_parameters:
             if not isinstance(query_parameters, dict):
                 raise LemonQueryException("query_parameters must be a dict!")
@@ -75,8 +75,8 @@ class MapQuery:
                     api_request.status_code, api_request.content
                 )
             )
-        self._response_timestamp = datetime.datetime.now()
-        self._response_raw = json.loads(api_request.content)
+        self.timestamp = datetime.datetime.now()
+        self.response_raw = json.loads(api_request.content)
 
 
 class MapViewParser:
