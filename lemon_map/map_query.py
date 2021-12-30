@@ -1,10 +1,11 @@
 # -*- coding: utf-8 -*-
+import datetime
 import json
 
 import requests
-import datetime
-from exceptions import LemonQueryException
+
 from api_helper import LIME_API_BASE_URL
+from exceptions import LemonQueryException
 from vehicles import Scooter, NonScooter
 
 
@@ -76,7 +77,7 @@ class MapQuery:
         self._response_raw = json.loads(api_request.content)
 
 
-class MapViewParser():
+class MapViewParser:
     def __init__(self):
         self._vehicles = set()
         pass

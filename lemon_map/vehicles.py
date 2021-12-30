@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+
 class Vehicle:
     def __init__(self, attribute_dict=None):
         self.id = None
