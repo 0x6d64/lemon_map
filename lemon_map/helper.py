@@ -43,6 +43,7 @@ def plot_vehicles(vehicles, user_coordinates=None, circle_radius=1000, show=True
         longitudes.append(veh.longitude)
 
     fig, axes = pplot.subplots()
+    fig.set_dpi(300)
     axes.set_box_aspect(1.0)
     axes.scatter(longitudes, latitudes, marker=".")
 
