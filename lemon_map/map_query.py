@@ -1,14 +1,14 @@
 # -*- coding: utf-8 -*-
 import datetime
 import json
+import os.path
 
-import geopy
-import geopy.distance
 import requests
 
 from api_helper import LIME_API_BASE_URL
 from exceptions import LemonQueryException
 from vehicles import Scooter, NonScooter
+from helper import geo_distance
 
 
 class MapQuery:
@@ -20,8 +20,8 @@ class MapQuery:
         self.sw_lat = None
         self.sw_lng = None
         self.zoom = None
-        self._response_raw = None
-        self._response_timestamp = None
+        self.response_raw = None
+        self.timestamp = None
         if query_parameters:
             if not isinstance(query_parameters, dict):
                 raise LemonQueryException("query_parameters must be a dict!")
@@ -75,8 +75,8 @@ class MapQuery:
                     api_request.status_code, api_request.content
                 )
             )
-        self._response_timestamp = datetime.datetime.now()
-        self._response_raw = json.loads(api_request.content)
+        self.timestamp = datetime.datetime.now()
+        self.response_raw = json.loads(api_request.content)
 
 
 class MapViewParser:
@@ -119,26 +119,12 @@ class MapViewParser:
         return parsed_data
 
     def _update_straightline_distances(self, vehicles):
-        user_location = geopy.point.Point(self.user_lat, self.user_lon)
+        user_location = (self.user_lat, self.user_lon)
         for v in vehicles:
-            v_location = geopy.point.Point(v.latitude, v.longitude)
-            distance = geopy.distance.geodesic(user_location, v_location).meters
+            v_location = (v.latitude, v.longitude)
+            distance = geo_distance(v_location, user_location)
             v.distance_straight = distance
 
 
 if __name__ == "__main__":
-    import config
-    import auth
-    import os
-
-    lemon_config = config.LemonConfig().from_file("../.lemon_config.ini")
-    auth_file = os.path.join("..", lemon_config.get("DEFAULT", "auth_file"))
-    my_auth = auth.LemonAuth().from_token_file(auth_file)
-
-    example_json = "../data_raw/example_response3.json"
-    parser = MapViewParser(user_lat=45.79919616985226, user_lon=24.155758121471834)
-    vehicles = parser.parse_file(example_json)
-    for x in sorted(vehicles, key=lambda x: x.distance_straight):
-        print(str(x))
-
-    print("done")
+    pass
