@@ -2,12 +2,12 @@
 import datetime
 import json
 
-import haversine
 import requests
 
 from api_helper import LIME_API_BASE_URL
 from exceptions import LemonQueryException
 from vehicles import Scooter, NonScooter
+from helper import geo_distance
 
 
 class MapQuery:
@@ -121,7 +121,7 @@ class MapViewParser:
         user_location = (self.user_lat, self.user_lon)
         for v in vehicles:
             v_location = (v.latitude, v.longitude)
-            distance = haversine.haversine(user_location, v_location, unit=haversine.Unit.METERS)
+            distance = geo_distance(v_location, user_location)
             v.distance_straight = distance
 
 
