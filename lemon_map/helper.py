@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import haversine
-
+import functools
 
 def distance_human_readable(value, cutoff=950):
     """
@@ -13,6 +13,7 @@ def distance_human_readable(value, cutoff=950):
     return representation
 
 
+@functools.lru_cache(maxsize=256)
 def geo_distance(point_a, point_b):
     """
     wrapper around the desired distance calculation to facilitate refactoring
