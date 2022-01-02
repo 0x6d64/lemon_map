@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import statistics
 
-from helper import geo_distance
+from helper import geo_distance, distance_human_readable
 
 
 class VehicleStats:
@@ -25,3 +25,16 @@ class VehicleStats:
     @property
     def mean_distance(self):
         return statistics.mean(self._distances_to_user)
+
+    def get_statistics_summary(self):
+        sum_lines = list()
+        sum_lines.append("found {} vehicles".format(len(self.vehicles)))
+        sum_lines.append(
+            "nearest vehicle: {id} @ {dist}".format(
+                id=self.nearest_scooter.plate_number,
+                dist=distance_human_readable(self.nearest_scooter.distance_straight),
+            )
+        )
+        sum_lines.append("mean distance: {}".format(distance_human_readable(self.mean_distance)))
+        sum_lines.append("median distance: {}".format(distance_human_readable(self.median_distance)))
+        return "\n".join(sum_lines)

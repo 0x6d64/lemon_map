@@ -55,7 +55,10 @@ if __name__ == "__main__":
     for x in sorted(vehicles, key=lambda x: x.distance_straight):
         print(str(x))
 
-    plot_vehicles(vehicles, user_coordinates=(user_lat, user_lon), circle_radius=500)
+    # plot_vehicles(vehicles, user_coordinates=(user_lat, user_lon), circle_radius=500)
 
     print("{} iterations took {:.3f}ms".format(iterations, tt * 1000))
+    import vehicle_stats
+    stats = vehicle_stats.VehicleStats(vehicles)
+    print(stats.get_statistics_summary())
     print("done")
