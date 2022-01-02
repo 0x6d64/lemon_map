@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
-import haversine
 import functools
+import haversine
+
 
 def distance_human_readable(value, cutoff=950):
     """

@@ -28,7 +28,8 @@ class LemonMap:
         self.vehicles = parser.parse_map_view(self.query.response_raw, timestamp=self.timestamp)
         self.vehicle_stats = VehicleStats(self.vehicles)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     import config
     import auth
     import os
@@ -42,7 +43,7 @@ if __name__ == '__main__':
     parser = MapViewParser(user_lat=45.79919616985226, user_lon=24.155758121471834)
 
     iterations = 100
-    tt = timeit.timeit(lambda : parser.parse_file(example_json), number=iterations)
+    tt = timeit.timeit(lambda: parser.parse_file(example_json), number=iterations)
 
     vehicles = parser.parse_file(example_json)
     for x in sorted(vehicles, key=lambda x: x.distance_straight):
